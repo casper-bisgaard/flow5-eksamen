@@ -8,8 +8,15 @@
     display: none;
 }
 }
+a{
+  text-decoration: none;
+}
 
 nav {
   display: flex;
   justify-content: space-between;
+}
+
+.left img {
+  height: 50px;
 }
