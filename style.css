@@ -1,0 +1,15 @@
+*{
+  box-sizing: border-box;
+  position: relative;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  ::-webkit-scrollbar {
+    display: none;
+}
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
