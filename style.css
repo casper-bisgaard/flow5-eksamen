@@ -4,24 +4,59 @@
   background-repeat: no-repeat;
   margin: 0;
   padding: 0;
-  ::-webkit-scrollbar {
+  font-family: 'Dosis', sans-serif;
+}
+*::-webkit-scrollbar {
     display: none;
+
 }
-}
+
 a{
   text-decoration: none;
+  color:white;
+  font-size: 22px;
+
+}
+
+.header {
+  background-image: url(images/background_hompage.png);
+  height: 800px;
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
+  /*border: 1px solid black; */
+}
+.left {
+  top: 21px;
+  margin-left: 15px;
 }
 
 .left img {
   height: 50px;
 }
 
+.right {
+  top: 30px;
+  text-align: center;
+}
 
 .right a {
-    padding: 0 50px 0 0;
+    margin: 0 20px;
+
+
+}
+
+.right .signupbutton {
+  background-color: #FCB040;
+  padding: 3px 35px 7px;
+  margin-right: 20px;
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 6px 9px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 6px 9px -2px rgba(0,0,0,0.75);
+box-shadow: 0px 6px 9px -2px rgba(0,0,0,0.75);
 }
