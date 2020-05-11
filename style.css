@@ -10,6 +10,31 @@
     display: none;
 
 }
+.burgercontainer {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 4px;
+  background-color: grey;
+  margin: 6px 0;
+  transition: 0.4s;
+  border-radius: 15px;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
 
 
 /* Extra small devices (phones, 600px and down) */
@@ -17,29 +42,53 @@
     .container {
   display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 60px auto auto 60px;
-    
+    grid-template-rows: auto auto auto 60px;
+
 }
     .header {
-        background-color: black;
+       z-index: 99;
+       padding: 15px;
         grid-column: 1 /  5;
-        
+        -webkit-box-shadow: 0px 6px 18px -8px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 6px 18px -8px rgba(0,0,0,0.75);
+        box-shadow: 0px 6px 18px -8px rgba(0,0,0,0.75);
+        display: flex;
+        justify-content: space-between;
+
     }
-    
+    .header img {
+
+      height: 40px;
+    }
+
     main {
-        background-color: blue;
+        padding-top: 20px;
         grid-column: 1 /  5;
     }
-    
+    .maincontainer{
+      text-align: center;
+    }
+    .maincontainer h1 {
+      font-weight: 200;
+    }
+    .maincontainer div {
+      width: 70%;
+      margin: 20px auto;
+    }
+
+
     .imagecontainer {
         grid-column: 1 /  5;
-        
+        margin: 0 auto;
+        width: 70%;
+
     }
-    
+
     .imagecontainer img {
-        width: 100%;
+      width: 100%;
+
     }
-    
+
     footer{
         background-color: black;
         grid-column: 1 / 5;
@@ -49,19 +98,19 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    
+
 .container {
   display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 60px 50px 30px;
-    
+
 }
     .header {
         background-color: black;
         grid-column: 1 / span 5;
-        
+
     }
-    
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
