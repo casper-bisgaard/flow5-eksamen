@@ -11,16 +11,58 @@
 
 }
 
-.container {
-  display: grid;
-
-}
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {...}
+@media only screen and (max-width: 600px) {
+    .container {
+  display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 60px auto auto 60px;
+    
+}
+    .header {
+        background-color: black;
+        grid-column: 1 /  5;
+        
+    }
+    
+    main {
+        background-color: blue;
+        grid-column: 1 /  5;
+    }
+    
+    .imagecontainer {
+        grid-column: 1 /  5;
+        
+    }
+    
+    .imagecontainer img {
+        width: 100%;
+    }
+    
+    footer{
+        background-color: black;
+        grid-column: 1 / 5;
+    }
+}
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {...}
+@media only screen and (min-width: 600px) {
+    
+.container {
+  display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 60px 50px 30px;
+    
+}
+    .header {
+        background-color: black;
+        grid-column: 1 / span 5;
+        
+    }
+    
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {...}
