@@ -88,17 +88,17 @@ a{
 
 .kontakt a {
     color: black;
-  
+
 }
 .kontakt .signupbutton  {
     color: white;
 }
 
- 
 
 
 
-    
+
+
 
 
 
@@ -168,7 +168,7 @@ a{
         background-color: black;
         grid-column: 1 / 5;
     }
-    
+
     /* kontakt side styles*/
     .kontakt-form {
         grid-column: 1 / 5;
@@ -182,39 +182,39 @@ a{
         -moz-box-shadow: -2px 9px 28px -1px rgba(122,118,122,1);
         box-shadow: -2px 9px 28px -1px rgba(122,118,122,1);
     }
-    
+
     .tekstb input {
-        
+
         width: 80%;
         border: none;
         border-bottom: 1px solid #9c9c9c;
         margin-top: 30px;
         padding-bottom: 5px;
-        
+
     }
-    
+
     .tekstb textarea {
         width: 80%;
         border: none;
         border-bottom: 1px solid #9c9c9c;
         margin-top: 30px;
-        
+
     }
     .buttoncontainer {
         margin-top: 40px;
         margin-bottom: 30px;
     }
-    
+
     .button {
         padding: 10px 40%;
         background-color: #164881;
         border-radius: 20px;
-        
+
     }
-    
-    
-   
-    
+
+
+
+
 }
 
 
@@ -279,7 +279,7 @@ display: grid;
       background-color: black;
       grid-column: 1 / 5;
   }
-    
+
  /* kontakt side styles*/
     .kontakt-form {
         grid-column: 1 / 5;
@@ -293,36 +293,36 @@ display: grid;
         -moz-box-shadow: -2px 9px 28px -1px rgba(122,118,122,1);
         box-shadow: -2px 9px 28px -1px rgba(122,118,122,1);
     }
-    
+
     .tekstb input {
-        
+
         width: 80%;
         border: none;
         border-bottom: 1px solid #9c9c9c;
         margin-top: 30px;
         padding-bottom: 5px;
-        
+
     }
-    
+
     .tekstb textarea {
         width: 80%;
         border: none;
         border-bottom: 1px solid #9c9c9c;
         margin-top: 30px;
-        
+
     }
     .buttoncontainer {
         margin-top: 40px;
         margin-bottom: 30px;
     }
-    
+
     .button {
         padding: 10px 40%;
         background-color: #164881;
         border-radius: 20px;
-        
+
     }
-    
+
 }
 
 
