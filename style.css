@@ -169,7 +169,7 @@ a{
         grid-column: 1 / 5;
     }
 
-    /* kontakt side styles*/
+    /* ----------- kontakt side styles ----------*/
     .kontakt-form {
         grid-column: 1 / 5;
         top: 30%;
@@ -280,7 +280,7 @@ display: grid;
       grid-column: 1 / 5;
   }
 
- /* kontakt side styles*/
+ /* ----------- kontakt side styles ----------*/
     .kontakt-form {
         grid-column: 1 / 5;
         top: 30%;
