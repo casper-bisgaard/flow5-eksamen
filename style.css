@@ -117,7 +117,7 @@ h2 {
     .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
 
 }
     .header {
@@ -169,7 +169,7 @@ h2 {
 
     }
     .imagecontainer2 img {
-      margin: 40px auto;
+      margin: 40px auto 0 auto;
       width: 100%;
     }
 
@@ -178,14 +178,30 @@ h2 {
     }
 
 
-
-
-
-
     footer{
-        background-color: black;
+        background-color: #f5f5f5;
         grid-column: 1 / 5;
+        height: 200px;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
     }
+    footer div {
+      margin: 20px auto;
+      width: 50%;
+      text-align: center;
+    }
+    footer div:nth-child(1) img {
+      width: 200px;
+
+    }
+    footer div:nth-child(4) img {
+      width: 50px;
+
+    }
+
+
 
     /* ----------- kontakt side styles ----------*/
     .kontakt-form {
@@ -242,6 +258,9 @@ h2 {
   grid-template-rows: auto auto auto auto;
 
 }
+p {
+  line-height: 1.6;
+}
 
 .header  {
   grid-column: 1 / 9;
@@ -280,7 +299,7 @@ main {
     background-image: url(images/webdesigner.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-size: 550px auto;
+    background-size: 530px auto;
     background-position:right top;
     height: 500px;
 
@@ -293,7 +312,7 @@ main {
 .imagecontainer2{
   background-image: url(images/mobilbig.png);
   height: 600px;
-  background-size: 500px auto;
+  background-size: 490px auto;
   grid-column: 1 / 7;
   grid-row: 3 /4;
 }
@@ -302,6 +321,16 @@ main {
   grid-row: 3 /4;
   top: 50px;
 }
+
+footer{
+  grid-column: 1 / 9;
+}
+footer div {
+
+  width: 25%;
+  text-align: center;
+}
+
 
 }
 
@@ -313,10 +342,10 @@ main {
 
   .imagecontainer {
     background-image: url(images/webdesignerbig.png);
-    background-size: 830px auto ;
+    background-size: 810px auto ;
     grid-column: 2 / 9;
     height: 670px;
-    
+
 
   }
 
@@ -333,11 +362,12 @@ main {
 
  p {
     font-size: 18px;
+
   }
 
   .imagecontainer2{
     background-image: url(images/mobilbig.png);
-    height: 600px;
+    height: 610px;
     background-size: 600px auto;
 }
   .submain {
@@ -346,20 +376,16 @@ main {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  body {
-  background-color: #f5f5f5;
-  }
-  .container {
-    background-color: white;
-    max-width: 1367px;
-    margin: 0 auto;
+
+  .menu a {
+    font-size: 20px;
   }
 
   .imagecontainer {
     background-image: url(images/webdesignerbig.png);
     background-size: 950px auto ;
     grid-column: 2 / 9;
-    height: 800px;
+    height: 760px;
 
   }
 
@@ -378,5 +404,34 @@ main {
     font-size: 18px;
   }
 
+  .imagecontainer2{
+    background-image: url(images/mobilbig.png);
+    background-size: 750px auto;
+    height: 770px;
+
 }
+.submain {
+  top: 100px;
+}
+}
+
+@media only screen and (min-width: 1400px) {
+  body {
+  background-color: #f5f5f5;
+
+  }
+  .container {
+    background-color: white;
+     max-width: 1680px;
+    margin: 0 auto;
+    -webkit-box-shadow: 0px 10px 19px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 10px 19px -1px rgba(0,0,0,0.75);
+  box-shadow: 0px 10px 19px -1px rgba(0,0,0,0.75);
+  }
+  .imagecontainer {
+    background-size: 1050px auto ;
+    height: 840px;
+
+  }
+
 }
