@@ -91,7 +91,7 @@ h2 {
 
 /* ----------- kontakt side styles ----------*/
 
-.kontakt a {
+ .kontakt a {
     color: black;
 
 }
@@ -326,6 +326,7 @@ main {
 }
 .imagecontainer img, .imagecontainer2 img  {
   display: none;
+
 }
 
 .imagecontainer2{
@@ -348,11 +349,18 @@ footer div {
 
   width: 25%;
   text-align: center;
+
 }
 
         /* kontakt side styles*/
+    
+    
+    
     .kontakt-form {
+        z-index: 99;
+        background-color: white;
         grid-column: 2 /  8;
+        grid-row: 2/ 3;
         top: 30%;
         margin: 0 auto;
         box-shadow: 0 0 10px black;
@@ -400,8 +408,10 @@ footer div {
 
     }
 
+    
+    
     .kontakt-form img{
-        top: 15px;
+        top: 15px;  
 
     }
 
