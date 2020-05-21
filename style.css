@@ -253,18 +253,69 @@ h2 {
 
       .signup{
         width: 80%;
-        margin: 20px auto;
+        margin: 60px auto;
+        border-radius: 10px;
         -webkit-box-shadow: -2px 9px 28px -1px rgba(122,118,122,1);
         -moz-box-shadow: -2px 9px 28px -1px rgba(122,118,122,1);
         box-shadow: -2px 9px 28px -1px rgba(122,118,122,1);
         text-align: center;
+        max-width: 700px;
 
       }
       .signup input {
         width: 80%;
-        margin-top: 20px;
+        border: none;
+        border-bottom: 1px solid #9c9c9c;
+        margin-top: 30px;
+        padding-bottom: 5px;
+        font-size: 18px;
 
 
+      }
+      .signup h1 {
+        font-weight: 200;
+        padding-top: 30px;
+      }
+
+      .signup a {
+        color: blue
+      }
+      .signup button {
+        padding: 10px 20%;
+        background-color: #FCB040;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        border: none;
+        color:white;
+        font-size: 18px;
+      }
+      .conditions {
+        margin: 20px 0;
+      }
+
+      .errorstyle {
+        font-size: 12px;
+        color: red;
+        margin: 0 0;
+      }
+
+    /* ----------- sign up side styles ----------*/
+      .programheader{
+        grid-column: 1 / 5;
+        text-align: center;
+      }
+
+      .programheader img {
+        height: 50px;
+        top: 20px;
+      }
+
+      .programcontainer {
+        grid-column: 1 / 5;
+        background-color: green;
+        width: 90%;
+        height: 20px;
+        margin: 30px auto;
       }
 
 }
@@ -353,9 +404,9 @@ footer div {
 }
 
         /* kontakt side styles*/
-    
-    
-    
+
+
+
     .kontakt-form {
         z-index: 99;
         background-color: white;
@@ -408,10 +459,10 @@ footer div {
 
     }
 
-    
-    
+
+
     .kontakt-form img{
-        top: 15px;  
+        top: 15px;
 
     }
 
@@ -500,7 +551,7 @@ footer div {
 }
 
 @media only screen and (min-width: 1400px) {
-  body {
+  .homepage {
   background-color: #f5f5f5;
 
   }

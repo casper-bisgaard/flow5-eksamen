@@ -9,31 +9,36 @@
   </head>
   <body>
       <div class="signup">
-          <form action="action_page.php">
+          <form >
               <div class="">
+                <h1>Opret dig her</h1>
 
 
-              <input type="text" placeholder="Navn" name="name" required> <br>
-              <input type="text" placeholder="Email" name="email" required> <br>
+              <input type="text" placeholder="Navn" id="nameid" name="name" > <br>
+              <p class="errorstyle" id="errormessage_name"></p>
+
+              <input type="text" placeholder="Email" id="emailid"  name="email" > <br>
+              <p class="errorstyle" id="errormessage_email"></p>
+
+              <input type="password" placeholder="Kodeord" id="password" name="psw" > <br>
+              <p class="errorstyle" id="errormessage_code"></p>
 
 
-              <input type="password" placeholder="Enter Password" name="psw" required> <br>
+              <input type="password" placeholder="Gentag kodeord" id="reppassword" name="psw-repeat">
+              <p class="errorstyle" id="errormessage_repcode"></p>
 
 
-              <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+              <p class="conditions">Ved at Oprette dig accepterer du vores<a href="#"> betingelser</a>.</p>
+
+              <button type="button" id="signUp" onclick="validate()">Sign up</button>
 
 
-
-              <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-
-              <div class="clearfix">
-              <button type="button" class="cancelbtn">Cancel</button>
-              <button type="submit" class="signupbtn">Sign Up</button>
-              </div>
               </div>
           </form>
 
       </div>
+      <script type="text/javascript" src="master.js">
 
+      </script>
   </body>
 </html>
