@@ -358,14 +358,23 @@ h2 {
       }
 
      /* ----------- basic side styles ----------*/
-     .basiccontainer {
-       grid-column: 1 / 5;
-       background-color: #f5f5f5;
-       width: 90%;
-       height: 500px;
-       margin: 30px auto;
-       border-radius: 25px;
+     header {
+       padding-top: 20px;
+       display: flex;
+       justify-content: space-between;
+       width: 100%;
      }
+     .headerbasic{
+       width: 60px;
+     }
+     header img {
+       height: 50px;
+     }
+     header a {
+       color:black;
+      
+     }
+
 
 
 }
@@ -541,14 +550,7 @@ footer div {
 
     }
     /* ----------- basic side styles ----------*/
-    .basiccontainer {
-      grid-column: 1 / 9;
-      background-color: #f5f5f5;
-      width: 90%;
-      height: 500px;
-      margin: 30px auto;
-      border-radius: 25px;
-    }
+
 
 
 
@@ -614,23 +616,7 @@ footer div {
 
   }
   /* ----------- basic side styles ----------*/
-  .basiccontainer {
-    grid-column: 1 / 7;
-    background-color: #f5f5f5;
-    width: 95%;
-    height: 500px;
-    margin: 30px auto;
-    border-radius: 25px;
-  }
 
-  .sectioncontainer {
-    grid-column: 7 / 9;
-    background-color: #f5f5f5;
-    margin: 30px auto;
-    height: 500px;
-    width: 90%;
-    border-radius: 25px;
-  }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
