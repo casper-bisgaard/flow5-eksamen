@@ -91,8 +91,6 @@ h2 {
 
 /* ----------- kontakt side styles ----------*/
 
- .kontakt a {
-    color: black;
 
 }
 .kontakt .signupbutton  {
@@ -242,7 +240,7 @@ h2 {
 
     .button {
         padding: 10px 40%;
-        background-color: #164881;
+        background-color: #FAAF40;
         border-radius: 20px;
 
     }
@@ -251,9 +249,28 @@ h2 {
 /* ----------- sign up side styles ----------*/
 
 
+
+  
+
+  footer{
+      background-color: black;
+      grid-column: 1 / 5;
+  }
+    
+ /* kontakt side styles*/
+    
+    
+    .kontakt-form {
+        grid-column: 1 / 5;
+        top: 30%;
+        margin: 0 auto;
+        box-shadow: 0 0 10px black;
+      }
+  
       .signup{
         width: 80%;
         margin: 60px auto;
+
         border-radius: 10px;
         -webkit-box-shadow: -2px 9px 28px -1px rgba(122,118,122,1);
         -moz-box-shadow: -2px 9px 28px -1px rgba(122,118,122,1);
@@ -286,6 +303,19 @@ h2 {
         border-radius: 20px;
         margin-bottom: 20px;
         border: none;
+
+        border-bottom: 1px solid #9c9c9c;
+        margin-top: 30px;
+        
+    }
+    .buttoncontainer {
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    
+    .button {
+        padding: 10px 40%;
+        background-color: #FAAF40;
         color:white;
         font-size: 18px;
       }
@@ -464,7 +494,23 @@ footer div {
 
         /* kontakt side styles*/
 
-
+    
+    .piccontainer{
+         margin-top: 0;
+    grid-column: 1/ 9;
+    grid-row: 1 / span 4;
+    width: 100%;
+    background-image: url(boelgens.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position:right top;
+    height: 900px;
+    
+    }
+       
+    
+    
 
     .kontakt-form {
         z-index: 99;
@@ -512,7 +558,7 @@ footer div {
 
     .button {
         padding: 10px 40%;
-        background-color: #164881;
+        background-color: #FAAF40;
         border-radius: 20px;
         font-size: 20px;
 
