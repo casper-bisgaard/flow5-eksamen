@@ -185,6 +185,7 @@ h2 {
         justify-content: space-evenly;
         flex-wrap: wrap;
     }
+    
     footer div {
       margin: 20px auto;
       width: 50%;
@@ -253,7 +254,7 @@ h2 {
   
 
   footer{
-      background-color: black;
+      
       grid-column: 1 / 5;
   }
     
