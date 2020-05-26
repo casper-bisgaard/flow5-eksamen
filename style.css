@@ -89,6 +89,27 @@ h2 {
   display: none;
 }
 
+/*------ hover på menu ------*/
+.navstyle {
+    display: inline-block;
+}
+.navstyle a:hover{
+  color: #FCB040;
+  text-decoration:  underline;
+}
+    /*------ Info om hvilken side du er på ------*/
+
+.navforside {
+    text-decoration: underline;
+}
+.navkontakt{
+    text-decoration: underline; 
+    
+}
+
+.navom {
+    text-decoration: underline; 
+}
 
 
 
@@ -96,6 +117,8 @@ h2 {
   font-size: 48px;
   font-weight: 100;
 }
+
+
 
 
 /*--------- different screen sizes ----------*/
