@@ -89,14 +89,6 @@ h2 {
   display: none;
 }
 
-/* ----------- kontakt side styles ----------*/
-
-
-}
-.kontakt .signupbutton  {
-    color: white;
-}
-
 
 
 
@@ -175,7 +167,7 @@ h2 {
       line-height: normal;
     }
 
-
+/*----------footer styles start---------*/
     footer{
         background-color: #f5f5f5;
         grid-column: 1 / 5;
@@ -199,8 +191,7 @@ h2 {
       width: 50px;
 
     }
-
-
+/*----------footer styles slut---------*/
 
 
     /* ----------- kontakt side styles ----------*/
@@ -245,28 +236,16 @@ h2 {
         border-radius: 20px;
 
     }
-
+    /* kontakt side styles slut*/
 
 /* ----------- sign up side styles ----------*/
 
 
 
-  
 
-  footer{
-      
-      grid-column: 1 / 5;
-  }
-    
- /* kontakt side styles*/
     
     
-    .kontakt-form {
-        grid-column: 1 / 5;
-        top: 30%;
-        margin: 0 auto;
-        box-shadow: 0 0 10px black;
-      }
+    
   
       .signup{
         width: 80%;
@@ -502,9 +481,8 @@ footer div {
     grid-row: 1 / span 4;
     width: 100%;
     background-image: url(boelgens.png);
-    background-size: cover;
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: 930px auto;
     background-position:right top;
     height: 900px;
     
@@ -566,12 +544,14 @@ footer div {
     }
 
 
-
+/*-----social medie iconer-----*/
     .kontakt-form img{
         top: 15px;
 
     }
 
+    /* kontakt side styles slut*/
+    
     /* ----------- program side styles ----------*/
     .logoheader{
       grid-column: 1 / 9;
@@ -659,9 +639,23 @@ footer div {
     width: 40%;
     height: 450px;
     margin: 30px 10px;
-
-
-  }
+    
+    }
+    /*------ kontakt side styles------*/
+      .piccontainer{
+         margin-top: 0;
+    grid-column: 1/ 9;
+    grid-row: 1 / span 4;
+    width: 100%;
+    background-image: url(boelgens.png);
+    background-repeat: no-repeat;
+    background-size: 1200px auto;
+    background-position:right top;
+    height: 900px;
+    
+    }
+    /*------ kontakt side styles slut------*/
+    }
   /* ----------- basic side styles ----------*/
 
 
@@ -723,9 +717,25 @@ body{
   width: 50%;
   height: 450px;
 
-
-
 }
+    
+    /*------ kontakt side styles------*/
+    
+     .piccontainer{
+         margin-top: 0;
+    grid-column: 1/ 9;
+    grid-row: 1 / span 4;
+    width: 100%;
+    background-image: url(boelgens.png);
+    background-repeat: no-repeat;
+    background-size: 1400px auto;
+    background-position:right top;
+    height: 900px;
+    
+    }
+    
+    /*------ kontakt side styles slut------*/
+    
 }
 
 @media only screen and (min-width: 1400px) {
@@ -747,4 +757,18 @@ body{
 
   }
 
+/*------ kontakt side styles------*/
+      .piccontainer{
+         margin-top: 0;
+    grid-column: 1/ 9;
+    grid-row: 1 / span 4;
+    width: 100%;
+    background-image: url(boelgens.png);
+    background-repeat: no-repeat;
+    background-size: 1400px auto;
+    background-position:right top;
+    height: 900px;
+    
+    }
+/*------ kontakt side styles slut------*/
 }
