@@ -236,6 +236,14 @@ h2 {
         border-radius: 20px;
 
     }
+    
+      .kontakttekst {
+      grid-column: 2 / 4;
+      margin: 0 auto;
+      top: 50px;
+      font-size: 20px;
+       
+    }
     /* kontakt side styles slut*/
 
 /* ----------- sign up side styles ----------*/
@@ -482,7 +490,7 @@ footer div {
     width: 100%;
     background-image: url(boelgens.png);
     background-repeat: no-repeat;
-    background-size: 930px auto;
+    background-size: 960px auto;
     background-position:right top;
     height: 900px;
     
@@ -498,6 +506,7 @@ footer div {
         grid-row: 2/ 3;
         top: 30%;
         margin: 0 auto;
+        right: 170px;
         box-shadow: 0 0 10px black;
         border-radius: 10px;
         width: 60%;
@@ -542,7 +551,24 @@ footer div {
         font-size: 20px;
 
     }
-
+    
+    .kontakttekst {
+        grid-column: 6 / 9;
+        grid-row: 2/3;
+        top:  30%;
+        margin-right: 20px;
+    }
+    .kontakttekst p {
+        color: white;
+        font-size: 20px;
+        padding-top: 10px;
+        
+    }
+    
+    .kontakttekst h1 {
+        color: white;
+        font-weight: bold;
+    }
 
 /*-----social medie iconer-----*/
     .kontakt-form img{
@@ -649,7 +675,7 @@ footer div {
     width: 100%;
     background-image: url(boelgens.png);
     background-repeat: no-repeat;
-    background-size: 1200px auto;
+    background-size: 1250px auto;
     background-position:right top;
     height: 900px;
     
@@ -734,6 +760,33 @@ body{
     
     }
     
+      .kontakt-form {
+        z-index: 99;
+        background-color: white;
+        grid-column: 2 /  8;
+        grid-row: 2/ 3;
+        top: 30%;
+        margin: 0 auto;
+        right: 210px;
+        box-shadow: 0 0 10px black;
+        border-radius: 10px;
+        width: 60%;
+        text-align: center;
+        -webkit-box-shadow: -2px 9px 28px -1px rgba(122,118,122,1);
+        -moz-box-shadow: -2px 9px 28px -1px rgba(122,118,122,1);
+        box-shadow: -2px 9px 28px -1px rgba(122,118,122,1);
+    }
+    
+    .kontakttekst {
+        margin-right: 50px;
+        
+    }
+    
+    .kontakttekst p {
+        font-size: 25px;
+    }
+        
+    
     /*------ kontakt side styles slut------*/
     
 }
@@ -770,5 +823,23 @@ body{
     height: 900px;
     
     }
+    
+     .kontakt-form {
+        z-index: 99;
+        background-color: white;
+        grid-column: 2 /  8;
+        grid-row: 2/ 3;
+        top: 30%;
+        margin: 0 auto;
+        right: 210px;
+        box-shadow: 0 0 10px black;
+        border-radius: 10px;
+        width: 60%;
+        text-align: center;
+        -webkit-box-shadow: -2px 9px 28px -1px rgba(122,118,122,1);
+        -moz-box-shadow: -2px 9px 28px -1px rgba(122,118,122,1);
+        box-shadow: -2px 9px 28px -1px rgba(122,118,122,1);
+    }
+   
 /*------ kontakt side styles slut------*/
 }
