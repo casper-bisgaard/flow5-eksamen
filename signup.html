@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title>Sign Up</title>
+  </head>
+  <body>
+      <div class="signup">
+          <form >
+              <div class="">
+                <h1>Opret dig her</h1>
+
+
+              <input type="text" placeholder="Navn" id="nameid" name="name" > <br>
+              <p class="errorstyle" id="errormessage_name"></p>
+
+              <input type="text" placeholder="Email" id="emailid"  name="email" > <br>
+              <p class="errorstyle" id="errormessage_email"></p>
+
+              <input type="password" placeholder="Kodeord" id="password" name="psw" > <br>
+              <p class="errorstyle" id="errormessage_code"></p>
+
+
+              <input type="password" placeholder="Gentag kodeord" id="reppassword" name="psw-repeat">
+              <p class="errorstyle" id="errormessage_repcode"></p>
+
+
+              <p class="conditions">Ved at Oprette dig accepterer du vores<a href="#"> betingelser</a>.</p>
+
+              <button type="button" id="signUp" onclick="validate()">Sign up</button>
+
+
+              </div>
+          </form>
+
+      </div>
+      <script type="text/javascript" src="master.js">
+
+      </script>
+  </body>
+</html>
