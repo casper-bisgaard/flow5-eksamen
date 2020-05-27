@@ -1,5 +1,11 @@
 function myFunction(x) {
   x.classList.toggle("change");
+  var menu = document.getElementById("menu");
+  if (menu.className === "menu") {
+    menu.className +=  " menuShow";
+  }else {
+    menu.className = "menu";
+  }
 }
 
 
@@ -30,7 +36,7 @@ if (!emailResult) {
 
 var password = document.getElementById('password').value;
 var passwordtest = /^[A-Za-z .'-]{2,100}$/;
-var passwordResult = nametest.test(password);
+var passwordResult = passwordtest.test(password);
 if (!passwordResult) {
     var msg = document.getElementById('errormessage_code')
     msg.innerHTML ="Dette er ikke en gyldig kode";
@@ -51,6 +57,34 @@ if (reppassword == password) {
 if (nameResult && emailResult && passwordResult && reppassword == password) {
   location.replace("programs.html");
 }
+
+}
+
+function validatelogin() {
+  var email = document.getElementById('emailid').value;
+  var emailtest = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/;
+  var emailResult = emailtest.test(email);
+  if (!emailResult) {
+      var msg = document.getElementById('errormessage_email')
+      msg.innerHTML ="Dette er ikke en gyldig email";
+  }else {
+    var msg = document.getElementById('errormessage_email')
+    msg.innerHTML ="";
+  }
+  var password = document.getElementById('password').value;
+  var passwordtest = /^[A-Za-z .'-]{2,100}$/;
+  var passwordResult = passwordtest.test(password);
+  if (!passwordResult) {
+      var msg = document.getElementById('errormessage_code')
+      msg.innerHTML ="Dette er ikke en gyldig kode";
+  } else {
+    var msg = document.getElementById('errormessage_code')
+    msg.innerHTML ="";
+  }
+
+  if (emailResult && passwordResult) {
+    location.replace("programs.html");
+  }
 
 }
 
