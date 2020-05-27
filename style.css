@@ -30,6 +30,7 @@ a{
 .burgercontainer {
   display: inline-block;
   cursor: pointer;
+  margin: 5px;
 }
 
 
@@ -66,11 +67,15 @@ a{
 
 .signupbutton {
   background-color: #FCB040;
+  color: white;
   padding: 3px 30px 7px;
   border-radius: 25px;
   -webkit-box-shadow: 0px 6px 9px -2px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 6px 9px -2px rgba(0,0,0,0.75);
   box-shadow: 0px 6px 9px -2px rgba(0,0,0,0.75);
+}
+.signupbutton:hover {
+  background-color: #bd832f;
 }
 .maincontainer h1{
   display: inline;
@@ -85,9 +90,7 @@ h2 {
   top: 30px;
   font-size: 18px;
 }
-.menu {
-  display: none;
-}
+
 
 /*------ hover på menu ------*/
 .navstyle {
@@ -103,12 +106,12 @@ h2 {
     text-decoration: underline;
 }
 .navkontakt{
-    text-decoration: underline; 
-    
+    text-decoration: underline;
+
 }
 
 .navom {
-    text-decoration: underline; 
+    text-decoration: underline;
 }
 
 
@@ -131,8 +134,10 @@ h2 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto auto auto auto auto auto;
-
 }
+/*----------------- menu ----------------*/
+
+
     .header {
      z-index: 99;
      padding: 15px;
@@ -142,12 +147,37 @@ h2 {
      box-shadow: 0px 6px 18px -8px rgba(0,0,0,0.75);
      display: flex;
      justify-content: space-between;
+     flex-wrap:wrap;
     }
+
 
     .header img {
      height: 40px;
     }
+    .header .signupbutton {
+      color:white;
+    }
+    .menu {
+      display: none;
+      width: 100%;
+      text-align: center;
 
+    }
+    .menuShow {
+      display: block;
+
+    }
+    .menu a {
+      display: block;
+      color: black;
+      margin-top: 15px;
+
+    }
+
+
+
+
+    /*----------------- menu ----------------*/
     main {
     padding-top: 20px;
     grid-column: 1 /  5;
@@ -175,6 +205,7 @@ h2 {
     }
     .submain {
       grid-column: 1 /  5;
+      z-index: 99;
     }
 
     .imagecontainer2 {
@@ -200,7 +231,7 @@ h2 {
         justify-content: space-evenly;
         flex-wrap: wrap;
     }
-    
+
     footer div {
       margin: 20px auto;
       width: 50%;
@@ -259,25 +290,19 @@ h2 {
         border-radius: 20px;
 
     }
-    
+
       .kontakttekst {
       grid-column: 2 / 4;
       margin: 0 auto;
       top: 50px;
       font-size: 20px;
-       
+
     }
     /* kontakt side styles slut*/
 
 /* ----------- sign up side styles ----------*/
 
 
-
-
-    
-    
-    
-  
       .signup{
         width: 80%;
         margin: 60px auto;
@@ -314,16 +339,19 @@ h2 {
         border-radius: 20px;
         margin-bottom: 20px;
         border: none;
-
+        color: white;
         border-bottom: 1px solid #9c9c9c;
         margin-top: 30px;
-        
+        font-size: 20px;
+    }
+    .signup button:hover{
+      background-color: #bd832f;
     }
     .buttoncontainer {
         margin-top: 40px;
         margin-bottom: 30px;
     }
-    
+
     .button {
         padding: 10px 40%;
         background-color: #FAAF40;
@@ -521,11 +549,17 @@ p {
 }
 
 .menu {
- display: block;
+  width: auto;
  top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  display: block;
 }
+.menu a {
+  display: inline;
+  color: white;
+}
+
 
 
 main {
@@ -580,7 +614,7 @@ footer div {
 
         /* kontakt side styles*/
 
-    
+
     .piccontainer{
          margin-top: 0;
     grid-column: 1/ 9;
@@ -591,11 +625,11 @@ footer div {
     background-size: 960px auto;
     background-position:right top;
     height: 900px;
-    
+
     }
-       
-    
-    
+
+
+
 
     .kontakt-form {
         z-index: 99;
@@ -649,7 +683,7 @@ footer div {
         font-size: 20px;
 
     }
-    
+
     .kontakttekst {
         grid-column: 6 / 9;
         grid-row: 2/3;
@@ -660,9 +694,9 @@ footer div {
         color: white;
         font-size: 20px;
         padding-top: 10px;
-        
+
     }
-    
+
     .kontakttekst h1 {
         color: white;
         font-weight: bold;
@@ -675,7 +709,7 @@ footer div {
     }
 
     /* kontakt side styles slut*/
-    
+
     /* ----------- program side styles ----------*/
     .logoheader{
       grid-column: 1 / 9;
@@ -763,7 +797,7 @@ footer div {
     width: 40%;
     height: 450px;
     margin: 30px 10px;
-    
+
     }
     /*------ kontakt side styles------*/
       .piccontainer{
@@ -776,10 +810,10 @@ footer div {
     background-size: 1250px auto;
     background-position:right top;
     height: 900px;
-    
+
     }
     /*------ kontakt side styles slut------*/
-    }
+
   /* ----------- basic side styles ----------*/
   .sitecontainer {
     display: flex;
@@ -832,6 +866,8 @@ footer div {
   .sitecount li a:hover {
     color:#FCB040;
   }
+
+}
 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -893,9 +929,9 @@ body{
   height: 450px;
 
 }
-    
+
     /*------ kontakt side styles------*/
-    
+
      .piccontainer{
          margin-top: 0;
     grid-column: 1/ 9;
@@ -906,9 +942,9 @@ body{
     background-size: 1400px auto;
     background-position:right top;
     height: 900px;
-    
+
     }
-    
+
       .kontakt-form {
         z-index: 99;
         background-color: white;
@@ -925,19 +961,19 @@ body{
         -moz-box-shadow: -2px 9px 28px -1px rgba(122,118,122,1);
         box-shadow: -2px 9px 28px -1px rgba(122,118,122,1);
     }
-    
+
     .kontakttekst {
         margin-right: 50px;
-        
+
     }
-    
+
     .kontakttekst p {
         font-size: 25px;
     }
-        
-    
+
+
     /*------ kontakt side styles slut------*/
-    
+
 }
 
 @media only screen and (min-width: 1400px) {
@@ -970,9 +1006,9 @@ body{
     background-size: 1400px auto;
     background-position:right top;
     height: 900px;
-    
+
     }
-    
+
      .kontakt-form {
         z-index: 99;
         background-color: white;
@@ -989,6 +1025,6 @@ body{
         -moz-box-shadow: -2px 9px 28px -1px rgba(122,118,122,1);
         box-shadow: -2px 9px 28px -1px rgba(122,118,122,1);
     }
-   
+
 /*------ kontakt side styles slut------*/
 }
