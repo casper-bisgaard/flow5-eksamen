@@ -4,7 +4,7 @@ function myFunction(x) {
 
 
 function validate() {
-  console.log('hej');
+
 
  var name = document.getElementById('nameid').value;
  var nametest = /^[A-Za-z .'-]{2,100}$/;
@@ -50,10 +50,26 @@ if (reppassword == password) {
 
 if (nameResult && emailResult && passwordResult && reppassword == password) {
   location.replace("programs.html");
+}
 
 }
 
 
+function validatequestions() {
+
+var answer1 = document.getElementById('answer1').value;
+var answer2 = document.getElementById('answer2').value;
+
+if (answer1 == "html" || answer1 == "htm") {
+ document.getElementById('answer1p').innerHTML = "Spørgsmål 1: er rigtigt";
+} else {
+  document.getElementById('answer1p').innerHTML = "Spørgsmål 1: er forkert";
+}
+if (answer2 == "</body>" ) {
+   document.getElementById('answer2p').innerHTML = "Spørgsmål 2: er rigtigt";
+}else {
+   document.getElementById('answer2p').innerHTML = "Spørgsmål 2: er forkert";
+}
 
 
 }

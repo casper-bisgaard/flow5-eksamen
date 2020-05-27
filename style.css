@@ -344,8 +344,8 @@ h2 {
         margin: 15px auto;
 
       }
-      .program a{
-        padding: 10px 20%;
+      .normalbutton{
+        padding: 10px 60px;
         background-color: #FCB040;
         border-radius: 20px;
         top: 20px;
@@ -353,7 +353,7 @@ h2 {
         color:white;
         font-size: 18px;
       }
-      .program a:hover{
+      .normalbutton:hover{
         background-color: #bd832f;
       }
 
@@ -372,7 +372,82 @@ h2 {
      }
      header a {
        color:black;
-      
+      left: 20px;
+     }
+
+     .sitecontainer {
+       display: flex;
+       justify-content: center;
+     }
+
+     .site {
+       margin-top: 20px;
+       width: 90%;
+       height: 900px;
+       background: #f5f5f5;
+       border-radius: 25px;
+     }
+     .sitecount {
+       display: none;
+
+     }
+     .site h1  {
+
+       margin-top: 20px;
+       margin-bottom: 20px;
+     }
+     .site h2  {
+       font-size: 20px;
+     }
+     .site .intro {
+       text-align: center;
+
+     }
+     .iframecontainer{
+       width: 100%;
+       overflow: hidden;
+       padding-top: 56.25%;
+       margin: 20px auto;
+       max-width: 700px;
+       max-height: 438px;
+     }
+     .iframerep {
+       position: absolute;
+       top: 0;
+       left: 0;
+       bottom: 0;
+       right: 0;
+       width: 100%;
+       height: 100%;
+       border: none;
+       border-radius: 25px;
+       max-height: 438px;
+
+     }
+     .intro p {
+       width: 90%;
+       margin: 0 auto;
+     }
+
+     .intro a:nth-child(1) {
+       color:blue;
+     }
+
+     .intro .normalbutton {
+       top:50px;
+     }
+     .questions{
+       margin-top: 30px;
+     }
+
+     .questions input {
+       display: inline;
+     }
+     .questions p:nth-child(3)  {
+       display: inline;
+     }
+     .exstrap {
+       padding-top: 30px;
      }
 
 
@@ -616,6 +691,57 @@ footer div {
 
   }
   /* ----------- basic side styles ----------*/
+  .sitecontainer {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .site {
+    margin-top: 20px;
+    width: 75%;
+    height: 900px;
+    background: #f5f5f5;
+    border-radius: 25px;
+  }
+  .sitecount {
+    width: 15%;
+    height: 900px;
+    background: #f5f5f5;
+    display: block;
+    margin-top: 20px;
+    border-radius: 25px;
+  }
+  .iframecontainer{
+    width: 100%;
+    overflow: hidden;
+    padding-top: 453px;
+  }
+  .intro p {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .sitecount ul {
+    text-align: center;
+    list-style-type: none;
+    margin-top: 20px;
+  }
+  .sitecount .thick{
+    font-weight: bold;
+    padding-bottom: 20px;
+    font-size: 20px;
+
+  }
+  .sitecount li {
+    color: black;
+    border-bottom: 1px solid #a6a6a6;
+    padding: 10px 0;
+  }
+  .sitecount li a {
+    color: black;
+  }
+  .sitecount li a:hover {
+    color:#FCB040;
+  }
 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
