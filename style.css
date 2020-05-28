@@ -268,15 +268,21 @@ h2 {
        
     }
     /* kontakt side styles slut*/
-
+    
+    /*------ om siden tekst start ------*/
+    
+    .omtekst {
+        grid-column: 2/4;
+        grid-row: 2/3;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    /*------ om siden tekst slut ------*/
+    
+    
 /* ----------- sign up side styles ----------*/
 
-
-
-
-    
-    
-    
   
       .signup{
         width: 80%;
@@ -676,6 +682,96 @@ footer div {
 
     /* kontakt side styles slut*/
     
+    /*------ om side styles start ------*/
+    
+    .ombaggrund {
+            margin-top: 0;
+    grid-column: 1/ 9;
+    grid-row: 1 /  3;
+    width: 100%;
+    background-image: url(baggrundenom.png);
+    background-repeat: no-repeat;
+    background-size: 730px 800px;
+    background-position:right top;
+    height: 900px;
+        
+    }
+    
+    .tobias {
+        grid-column: 1/ span 3;
+        display: block;
+        width: 100%;
+        left: 110px;
+        bottom: 820px;
+        
+        
+    }
+    
+    .tobias img {
+        width: 180px;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px black;
+    }
+    
+    .malene {
+        grid-column: 1/ span 3;
+        display: block;
+        width: 100%;
+        left: 110px;
+        bottom: 800px;
+        
+        
+    }
+    
+    .malene img {
+        width: 180px;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px black;
+    }
+    
+    .casper {
+        grid-column: 1/ span 3;
+        display: block;
+        width: 100%;
+        left: 110px;
+        bottom: 780px;
+        
+        
+    }
+    
+    .casper img {
+        width: 180px;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px black;
+    }
+    /*------ om side styles slut ------*/
+    
+     /*------ om siden tekst start ------*/
+    
+    .omtekst {
+        grid-column: 5/9;
+        grid-row: 2/4;
+        margin-top: 70px;
+        margin-right: 5px;
+        bottom: 5%;
+        text-align: justify;
+        right: 10px;
+        padding-right: 20px;
+        
+    }
+    
+    .omtekst p, .omtekst h1 {
+        color: white;
+    }
+    .omtekst h1{
+        font-weight: bold;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    
+    /*------ om siden tekst slut ------*/
+    
+    
     /* ----------- program side styles ----------*/
     .logoheader{
       grid-column: 1 / 9;
@@ -701,9 +797,6 @@ footer div {
 
     }
     /* ----------- basic side styles ----------*/
-
-
-
 
 
 }
@@ -779,7 +872,43 @@ footer div {
     
     }
     /*------ kontakt side styles slut------*/
+    /*------ om side styles start ------*/
+    
+    .ombaggrund {
+            margin-top: 0;
+    grid-column: 1/ 9;
+    grid-row: 1 /  3;
+    width: 100%;
+    background-image: url(baggrundenom.png);
+    background-repeat: no-repeat;
+    background-size: 1000px auto;
+    background-position:right top;
+    height: 900px;
+   
     }
+    
+    
+       /*------ om siden tekst start ------*/
+    
+    .omtekst {
+        grid-column: 5/9;
+        grid-row: 2/4;
+        margin-top: 70px;
+        margin-right: 5px;
+        bottom: 5%;
+        text-align: justify;
+        right: 50px;
+        padding-right: 20px;
+        
+    }
+    
+    /*------ om siden tekst slut ------*/
+   
+    
+    
+    /*------ om side styles slut ------*/
+    
+    
   /* ----------- basic side styles ----------*/
   .sitecontainer {
     display: flex;
@@ -832,7 +961,7 @@ footer div {
   .sitecount li a:hover {
     color:#FCB040;
   }
-
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
@@ -937,6 +1066,46 @@ body{
         
     
     /*------ kontakt side styles slut------*/
+    
+     /*------ om side styles start ------*/
+    
+    .ombaggrund {
+            margin-top: 0;
+    grid-column: 1/ 9;
+    grid-row: 1 /  span 4;
+    width: 100%;
+    background-image: url(baggrundenom.png);
+    background-repeat: no-repeat;
+    background-size: 1100px auto;
+    background-position:right top;
+    height: 900px;
+   
+    }
+    
+       /*------ om siden tekst start ------*/
+    
+    .omtekst {
+        grid-column: 5/9;
+        grid-row: 2/4;
+        margin-top: 70px;
+        bottom: 5%;
+        text-align: justify;
+        right: 50px;
+        margin-left: 40px;
+        
+        
+    }
+    .omtekst p{
+        font-size: 20px;
+    }
+    
+    .omtekst h1 {
+        font-size: 55px;
+    }
+    
+    /*------ om siden tekst slut ------*/
+    
+    /*------ om side styles slut ------*/
     
 }
 
