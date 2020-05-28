@@ -780,6 +780,7 @@ footer div {
     .kontakttekst h1 {
         color: white;
         font-weight: bold;
+        font-size: 35px;
     }
 
 /*-----social medie iconer-----*/
@@ -978,6 +979,10 @@ footer div {
     height: 900px;
 
     }
+    
+    .kontakttekst h1 {
+        font-size: 40px;
+    }
     /*------ kontakt side styles slut------*/
 
     /*------ om side styles start ------*/
@@ -1170,7 +1175,7 @@ body{
         box-shadow: -2px 9px 28px -1px rgba(122,118,122,1);
     }
 
-    .kontakttekst {
+    .kontakttekst h1 {
         margin-right: 50px;
 
     }
