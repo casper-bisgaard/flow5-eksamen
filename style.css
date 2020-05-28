@@ -1,4 +1,5 @@
-*{
+/*-------    reset     ------*/
+* {
   box-sizing: border-box;
   position: relative;
   background-repeat: no-repeat;
@@ -6,33 +7,21 @@
   padding: 0;
   font-family: 'Dosis', sans-serif;
 }
+
 *::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 *:focus {
-    outline: none;
+  outline: none;
 }
-
 
 /*---------- burgerMenu ----------*/
-
-
-a{
-  color: white;
-  text-decoration: none;
-}
-.logocontainer {
-  top: 5px;
-}
-
-
 .burgercontainer {
   display: inline-block;
   cursor: pointer;
   margin: 5px;
 }
-
 
 .bar1, .bar2, .bar3 {
   width: 35px;
@@ -48,7 +37,9 @@ a{
   transform: rotate(-45deg) translate(-9px, 6px);
 }
 
-.change .bar2 {opacity: 0;}
+.change .bar2 {
+  opacity: 0;
+}
 
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
@@ -56,11 +47,11 @@ a{
 }
 
 /*---------------- default settings ----------*/
-
-a{
+a {
   color: white;
   text-decoration: none;
 }
+
 .logocontainer {
   top: 5px;
 }
@@ -70,528 +61,521 @@ a{
   color: white;
   padding: 3px 30px 7px;
   border-radius: 25px;
-  -webkit-box-shadow: 0px 6px 9px -2px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 6px 9px -2px rgba(0,0,0,0.75);
-  box-shadow: 0px 6px 9px -2px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 6px 9px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 6px 9px -2px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 6px 9px -2px rgba(0, 0, 0, 0.75);
 }
+
 .signupbutton:hover {
   background-color: #bd832f;
 }
-.maincontainer h1{
+
+.maincontainer h1 {
   display: inline;
 }
+
+.h1style {
+  /* til style af < og > på overskrift */
+  font-size: 48px;
+  font-weight: 100;
+}
+
 h2 {
   display: inline;
   font-size: 2em;
   font-weight: 200;
 }
-.maincontainer .signupbutton{
+
+.maincontainer .signupbutton {
   padding: 10px 55px;
   top: 30px;
   font-size: 18px;
 }
 
-
 /*------ hover på menu ------*/
 .navstyle {
-    display: inline-block;
+  display: inline-block;
 }
-.navstyle a:hover{
+
+.navstyle a:hover {
   color: #FCB040;
-  text-decoration:  underline;
+  text-decoration: underline;
 }
-    /*------ Info om hvilken side du er på ------*/
 
+/*------ Info om hvilken side du er på ------*/
 .navforside {
-    text-decoration: underline;
+  text-decoration: underline;
 }
-.navkontakt{
-    text-decoration: underline;
 
+.navkontakt {
+  text-decoration: underline;
 }
 
 .navom {
-    text-decoration: underline;
+  text-decoration: underline;
 }
-
-
-
-.h1style {
-  font-size: 48px;
-  font-weight: 100;
-}
-
-
-
 
 /*--------- different screen sizes ----------*/
-
-
 /* Extra small devices (phones, 600px and down) */
 /* and Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 600px),(min-width: 600px) {
-    .container {
+@media only screen and (max-width: 600px), (min-width: 600px) {
+  .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto auto auto auto auto auto;
-}
-/*----------------- menu ----------------*/
+  }
 
+  /*----------------- menu ----------------*/
+  .header {
+    z-index: 99;
+    padding: 15px;
+    grid-column: 1 / 5;
+    -webkit-box-shadow: 0px 6px 18px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 6px 18px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 6px 18px -8px rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 
-    .header {
-     z-index: 99;
-     padding: 15px;
-     grid-column: 1 /  5;
-     -webkit-box-shadow: 0px 6px 18px -8px rgba(0,0,0,0.75);
-     -moz-box-shadow: 0px 6px 18px -8px rgba(0,0,0,0.75);
-     box-shadow: 0px 6px 18px -8px rgba(0,0,0,0.75);
-     display: flex;
-     justify-content: space-between;
-     flex-wrap:wrap;
-    }
+  .header img {
+    height: 40px;
+  }
 
+  .header .signupbutton {
+    color: white;
+  }
 
-    .header img {
-     height: 40px;
-    }
-    .header .signupbutton {
-      color:white;
-    }
-    .menu {
-      display: none;
-      width: 100%;
-      text-align: center;
+  .menu {
+    display: none;
+    width: 100%;
+    text-align: center;
+  }
 
-    }
-    .menuShow {
-      display: block;
+  .menuShow {
+    display: block;
+  }
 
-    }
-    .menu a {
-      display: block;
-      color: black;
-      margin-top: 15px;
+  .menu a {
+    display: block;
+    color: black;
+    margin-top: 15px;
+  }
 
-    }
-
-
-
-
-    /*----------------- menu ----------------*/
-    main {
+  /*----------------- main ----------------*/
+  main {
     padding-top: 20px;
-    grid-column: 1 /  5;
+    grid-column: 1 / 5;
+  }
 
-    }
-    .maincontainer{
-      text-align: center;
-    }
-    .maincontainer h1 {
-      font-weight: 200;
-    }
-    .maincontainer div {
-      width: 70%;
-      margin: 20px auto;
-    }
+  .maincontainer {
+    text-align: center;
+  }
 
-    .imagecontainer {
-        grid-column: 1 /  5;
-        margin: 20px auto;
-        width: 70%;
-    }
+  .maincontainer h1 {
+    font-weight: 200;
+  }
 
-    .imagecontainer img {
-      width: 100%;
-    }
-    .submain {
-      grid-column: 1 /  5;
-      z-index: 99;
-    }
+  .maincontainer div {
+    width: 70%;
+    margin: 20px auto;
+  }
 
-    .imagecontainer2 {
-      grid-column: 1 / 5;
+  .imagecontainer {
+    grid-column: 1 / 5;
+    margin: 20px auto;
+    width: 70%;
+  }
 
-    }
-    .imagecontainer2 img {
-      margin: 40px auto 0 auto;
-      width: 100%;
-    }
+  .imagecontainer img {
+    width: 100%;
+  }
 
-    p {
-      line-height: normal;
-    }
+  .submain {
+    grid-column: 1 / 5;
+    z-index: 99;
+  }
 
-/*----------footer styles start---------*/
-    footer{
-        background-color: #f5f5f5;
-        grid-column: 1 / 5;
-        height: 200px;
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-    }
+  .imagecontainer2 {
+    grid-column: 1 / 5;
+  }
 
-    footer div {
-      margin: 20px auto;
-      width: 50%;
-      text-align: center;
-    }
-    footer div:nth-child(1) img {
-      width: 200px;
+  .imagecontainer2 img {
+    margin: 40px auto 0 auto;
+    width: 100%;
+  }
 
-    }
-    footer div:nth-child(4) img {
-      width: 50px;
+  p {
+    line-height: normal;
+  }
 
-    }
-/*----------footer styles slut---------*/
+  /*----------------- footer style ----------------*/
+  footer {
+    background-color: #f5f5f5;
+    grid-column: 1 / 5;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
 
+  footer div {
+    margin: 20px auto;
+    width: 50%;
+    text-align: center;
+  }
 
-    /* ----------- kontakt side styles ----------*/
-    .kontakt-form {
-        grid-column: 1 / 5;
-        top: 30%;
-        margin: 0 auto;
-        box-shadow: 0 0 10px black;
-        border-radius: 10px;
-        width: 60%;
-        text-align: center;
-        -webkit-box-shadow: -2px 9px 28px -1px rgba(122,118,122,1);
-        -moz-box-shadow: -2px 9px 28px -1px rgba(122,118,122,1);
-        box-shadow: -2px 9px 28px -1px rgba(122,118,122,1);
-    }
+  footer div:nth-child(1) img {
+    width: 200px;
+  }
 
-    .tekstb input {
+  footer div:nth-child(4) img {
+    width: 50px;
+  }
 
-        width: 80%;
-        border: none;
-        border-bottom: 1px solid #9c9c9c;
-        margin-top: 30px;
-        padding-bottom: 5px;
+  /* ----------- kontakt side styles ----------*/
+  .kontakt-form {
+    grid-column: 1 / 5;
+    top: 30%;
+    margin: 0 auto;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+    width: 60%;
+    text-align: center;
+    -webkit-box-shadow: -2px 9px 28px -1px rgba(122, 118, 122, 1);
+    -moz-box-shadow: -2px 9px 28px -1px rgba(122, 118, 122, 1);
+    box-shadow: -2px 9px 28px -1px rgba(122, 118, 122, 1);
+  }
 
-    }
+  .tekstb input {
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid #9c9c9c;
+    margin-top: 30px;
+    padding-bottom: 5px;
+  }
 
-    .tekstb textarea {
-        width: 80%;
-        border: none;
-        border-bottom: 1px solid #9c9c9c;
-        margin-top: 30px;
+  .tekstb textarea {
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid #9c9c9c;
+    margin-top: 30px;
+  }
 
-    }
-    .buttoncontainer {
-        margin-top: 40px;
-        margin-bottom: 30px;
-    }
+  .buttoncontainer {
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
 
-    .button {
-        padding: 10px 40%;
-        background-color: #FAAF40;
-        border-radius: 20px;
+  .button {
+    padding: 10px 40%;
+    background-color: #FAAF40;
+    border-radius: 20px;
+  }
 
-    }
+  .kontakttekst {
+    grid-column: 2 / 4;
+    margin: 0 auto;
+    top: 50px;
+    font-size: 20px;
+  }
 
-      .kontakttekst {
-      grid-column: 2 / 4;
-      margin: 0 auto;
-      top: 50px;
-      font-size: 20px;
+  /*------ om siden tekst start ------*/
+  .omtekst {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
 
-    }
-    /* kontakt side styles slut*/
+  /* ----------- sign up side styles ----------*/
+  .signup {
+    width: 80%;
+    margin: 60px auto;
+    border-radius: 10px;
+    -webkit-box-shadow: -2px 9px 28px -1px rgba(122, 118, 122, 1);
+    -moz-box-shadow: -2px 9px 28px -1px rgba(122, 118, 122, 1);
+    box-shadow: -2px 9px 28px -1px rgba(122, 118, 122, 1);
+    text-align: center;
+    max-width: 700px;
+  }
 
-    
-    /*------ om siden tekst start ------*/
-    
-    .omtekst {
-        grid-column: 2/4;
-        grid-row: 2/3;
-        text-align: center;
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
-    /*------ om siden tekst slut ------*/
-    
-    
+  .signup input {
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid #9c9c9c;
+    margin-top: 30px;
+    padding-bottom: 5px;
+    font-size: 18px;
+  }
 
+  .signup h1 {
+    font-weight: 200;
+    padding-top: 30px;
+  }
 
-  
+  .signup a {
+    color: blue
+  }
 
+  .signup button {
+    padding: 10px 20%;
+    background-color: #FCB040;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    border: none;
+    color: white;
+    border-bottom: 1px solid #9c9c9c;
+    margin-top: 30px;
+    font-size: 20px;
+  }
 
-/* ----------- sign up side styles ----------*/
+  .signup button:hover {
+    background-color: #bd832f;
+  }
 
+  .buttoncontainer {
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
 
+  .button {
+    padding: 10px 40%;
+    background-color: #FAAF40;
+    color: white;
+    font-size: 18px;
+  }
 
-      .signup{
-        width: 80%;
-        margin: 60px auto;
+  .conditions {
+    margin: 20px 0;
+  }
 
-        border-radius: 10px;
-        -webkit-box-shadow: -2px 9px 28px -1px rgba(122,118,122,1);
-        -moz-box-shadow: -2px 9px 28px -1px rgba(122,118,122,1);
-        box-shadow: -2px 9px 28px -1px rgba(122,118,122,1);
-        text-align: center;
-        max-width: 700px;
+  .errorstyle {
+    font-size: 12px;
+    color: red;
+    margin: 0 0;
+  }
 
-      }
-      .signup input {
-        width: 80%;
-        border: none;
-        border-bottom: 1px solid #9c9c9c;
-        margin-top: 30px;
-        padding-bottom: 5px;
-        font-size: 18px;
+  /* ----------- program side styles ----------*/
+  .programmenu {
+    grid-column: 1 / 5;
+  }
 
+  .programmenu .menu a {
+    color: black;
+  }
 
-      }
-      .signup h1 {
-        font-weight: 200;
-        padding-top: 30px;
-      }
+  .programmenu .menu .signupbutton {
+    color: white;
+  }
 
-      .signup a {
-        color: blue
-      }
-      .signup button {
-        padding: 10px 20%;
-        background-color: #FCB040;
-        border-radius: 20px;
-        margin-bottom: 20px;
-        border: none;
-        color: white;
-        border-bottom: 1px solid #9c9c9c;
-        margin-top: 30px;
-        font-size: 20px;
-    }
-    .signup button:hover{
-      background-color: #bd832f;
-    }
-    .buttoncontainer {
-        margin-top: 40px;
-        margin-bottom: 30px;
-    }
+  .programcontainer {
+    grid-column: 1 / 5;
+    background-color: #f5f5f5;
+    width: 90%;
+    margin: 30px auto;
+    border-radius: 25px;
+  }
 
-    .button {
-        padding: 10px 40%;
-        background-color: #FAAF40;
-        color:white;
-        font-size: 18px;
-      }
-      .conditions {
-        margin: 20px 0;
-      }
+  .program {
+    width: 80%;
+    background-color: white;
+    margin: 30px auto;
+    border-radius: 25px;
+    text-align: center;
+    max-width: 400px;
+    height: 400px;
+  }
 
-      .errorstyle {
-        font-size: 12px;
-        color: red;
-        margin: 0 0;
-      }
+  .program h3 {
+    font-size: 26px;
+    padding: 10px 0;
+  }
 
-    /* ----------- program side styles ----------*/
-      .programmenu{
-        grid-column: 1 / 5;
+  .program hr {
+    width: 90%;
+    border-top: 1px solid #f5f5f5;
+    margin: 10px auto;
+  }
 
-      }
-      .programmenu .menu a {
-        color: black;
-      }
-      .programmenu .menu .signupbutton {
-        color: white;
-      }
+  .program div {
+    width: 90%;
+    margin: 15px auto;
+  }
 
-      .programcontainer {
-        grid-column: 1 / 5;
-        background-color: #f5f5f5;
-        width: 90%;
+  .normalbutton {
+    padding: 10px 60px;
+    background-color: #FCB040;
+    border-radius: 20px;
+    top: 20px;
+    border: none;
+    color: white;
+    font-size: 18px;
+  }
 
-        margin: 30px auto;
-        border-radius: 25px;
-      }
-      .program {
-        width: 80%;
-        background-color:white;
-        margin: 30px auto;
-        border-radius: 25px;
-        text-align: center;
-        max-width: 400px;
-        height: 400px;
+  .normalbutton:hover {
+    background-color: #bd832f;
+  }
 
-      }
-      .program h3 {
-        font-size: 26px;
-        padding: 10px 0;
+  /* ----------- basic side styles ----------*/
+  header {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
 
-      }
+  .headerbasic {
+    width: 60px;
+  }
 
-      .program hr {
-        width: 90%;
-        border-top: 1px solid #f5f5f5;
-        margin: 10px auto;
-      }
-      .program div {
-        width: 90%;
-        margin: 15px auto;
+  header img {
+    height: 50px;
+  }
 
-      }
-      .normalbutton{
-        padding: 10px 60px;
-        background-color: #FCB040;
-        border-radius: 20px;
-        top: 20px;
-        border: none;
-        color:white;
-        font-size: 18px;
-      }
-      .normalbutton:hover{
-        background-color: #bd832f;
-      }
+  header a {
+    color: black;
+    left: 20px;
+  }
 
-     /* ----------- basic side styles ----------*/
-     header {
-       padding-top: 20px;
-       display: flex;
-       justify-content: space-between;
-       width: 100%;
-     }
-     .headerbasic{
-       width: 60px;
-     }
-     header img {
-       height: 50px;
-     }
-     header a {
-       color:black;
-      left: 20px;
-     }
+  .sitecontainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
 
-     .sitecontainer {
-       display: flex;
-       justify-content: center;
-     }
+  .site {
+    margin-top: 20px;
+    width: 90%;
+    height: 900px;
+    background: #f5f5f5;
+    border-radius: 25px;
+  }
 
-     .site {
-       margin-top: 20px;
-       width: 90%;
-       height: 900px;
-       background: #f5f5f5;
-       border-radius: 25px;
-     }
-     .sitecount {
-       display: none;
+  .sitecount {
+    display: none;
+  }
 
-     }
-     .site h1  {
+  .site h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 
-       margin-top: 20px;
-       margin-bottom: 20px;
-     }
-     .site h2  {
-       font-size: 20px;
-     }
-     .site .intro {
-       text-align: center;
+  .site h2 {
+    font-size: 20px;
+  }
 
-     }
-     .iframecontainer{
-       width: 100%;
-       overflow: hidden;
-       padding-top: 56.25%;
-       margin: 20px auto;
-       max-width: 700px;
-       max-height: 438px;
-     }
-     .iframerep {
-       position: absolute;
-       top: 0;
-       left: 0;
-       bottom: 0;
-       right: 0;
-       width: 100%;
-       height: 100%;
-       border: none;
-       border-radius: 25px;
-       max-height: 438px;
+  .site .intro {
+    text-align: center;
+  }
 
-     }
-     .intro p {
-       width: 90%;
-       margin: 0 auto;
-     }
+  .iframecontainer {
+    width: 100%;
+    overflow: hidden;
+    padding-top: 56.25%;
+    margin: 20px auto;
+    max-width: 700px;
+    max-height: 438px;
+  }
 
-     .intro a:nth-child(1) {
-       color:blue;
-     }
+  .iframerep {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 25px;
+    max-height: 438px;
+  }
 
-     .intro .normalbutton {
-       top:50px;
-     }
-     .questions{
-       margin-top: 30px;
-     }
+  .intro p {
+    width: 90%;
+    margin: 0 auto;
+  }
 
-     .questions input {
-       display: inline;
-     }
-     .questions p:nth-child(3)  {
-       display: inline;
-     }
-     .exstrap {
-       padding-top: 30px;
-     }
+  .intro a:nth-child(1) {
+    color: blue;
+  }
+  .next {
+    margin-top: 20px;
+  }
 
+  .intro .normalbutton {
+    top: 50px;
+  }
 
+  .questions {
+    margin-top: 30px;
+  }
 
+  .questions input {
+    display: inline;
+    width: 170px;
+    height: 30px;
+    font-size: 16px;
+  }
+
+  .questions p:nth-child(3) {
+    display: inline;
+  }
+
+  .exstrap {
+    padding-top: 30px;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .container {
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: auto auto auto auto;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: auto auto auto auto;
+  }
 
-}
-p {
-  line-height: 1.6;
-}
+  p {
+    line-height: 1.6;
+  }
 
-.header  {
-  grid-column: 1 / 9;
-  grid-row: 1 /2;
-  box-shadow: none;
+  .header {
+    grid-column: 1 / 9;
+    grid-row: 1 /2;
+    box-shadow: none;
+  }
 
-}
-.header a {
-  margin: 0 15px;
-}
+  .header a {
+    margin: 0 15px;
+  }
 
-.burgercontainer{
-  display: none;
-}
+  .burgercontainer {
+    display: none;
+  }
 
-.menu {
-  width: auto;
- top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  display: block;
-}
-.menu a {
-  display: inline;
-  color: white;
-}
+  .menu {
+    width: auto;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: block;
+  }
 
+  .menu a {
+    display: inline;
+    color: white;
+  }
 
-
-main {
-
+  main {
     grid-column: 1 / 5;
     grid-row: 1 /3;
     top: 130px;
     z-index: 99
+  }
 
-}
-.imagecontainer {
-  margin-top: 0;
+  .imagecontainer {
+    margin-top: 0;
     grid-column: 3 / 9;
     grid-row: 1 /3;
     width: 100%;
@@ -599,256 +583,226 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
     background-size: 530px auto;
-    background-position:right top;
+    background-position: right top;
     height: 500px;
+  }
 
+  .imagecontainer img, .imagecontainer2 img {
+    display: none;
+  }
 
-}
-.imagecontainer img, .imagecontainer2 img  {
-  display: none;
+  .imagecontainer2 {
+    background-image: url(images/mobilbig.png);
+    height: 600px;
+    background-size: 490px auto;
+    grid-column: 1 / 7;
+    grid-row: 3 /4;
+  }
 
-}
+  .submain {
+    grid-column: 5 / 9;
+    grid-row: 3 /4;
+    top: 50px;
+  }
 
-.imagecontainer2{
-  background-image: url(images/mobilbig.png);
-  height: 600px;
-  background-size: 490px auto;
-  grid-column: 1 / 7;
-  grid-row: 3 /4;
-}
-.submain {
-  grid-column: 5 / 9;
-  grid-row: 3 /4;
-  top: 50px;
-}
+  footer {
+    grid-column: 1 / 9;
+  }
 
-footer{
-  grid-column: 1 / 9;
-}
-footer div {
+  footer div {
+    width: 25%;
+    text-align: center;
+  }
 
-  width: 25%;
-  text-align: center;
-
-}
-
-        /* kontakt side styles*/
-
-
-    .piccontainer{
-         margin-top: 0;
+  /* kontakt side styles*/
+  .piccontainer {
+    margin-top: 0;
     grid-column: 1/ 9;
     grid-row: 1 / span 4;
     width: 100%;
     background-image: url(boelgens.png);
     background-repeat: no-repeat;
     background-size: 960px auto;
-    background-position:right top;
+    background-position: right top;
     height: 900px;
+  }
 
-    }
+  .kontakt-form {
+    z-index: 99;
+    background-color: white;
+    grid-column: 2 / 8;
+    grid-row: 2/ 3;
+    top: 30%;
+    margin: 0 auto;
+    right: 170px;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+    width: 60%;
+    text-align: center;
+    -webkit-box-shadow: -2px 9px 28px -1px rgba(122, 118, 122, 1);
+    -moz-box-shadow: -2px 9px 28px -1px rgba(122, 118, 122, 1);
+    box-shadow: -2px 9px 28px -1px rgba(122, 118, 122, 1);
+  }
 
+  .kontakt-form h1 {
+    margin-top: 10px;
+  }
 
+  .tekstb input {
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid #9c9c9c;
+    margin-top: 30px;
+    padding-bottom: 5px;
+    font-size: 15px;
+  }
 
+  .tekstb textarea {
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid #9c9c9c;
+    margin-top: 30px;
+    font-size: 15px;
+  }
 
-    .kontakt-form {
-        z-index: 99;
-        background-color: white;
-        grid-column: 2 /  8;
-        grid-row: 2/ 3;
-        top: 30%;
-        margin: 0 auto;
-        right: 170px;
-        box-shadow: 0 0 10px black;
-        border-radius: 10px;
-        width: 60%;
-        text-align: center;
-        -webkit-box-shadow: -2px 9px 28px -1px rgba(122,118,122,1);
-        -moz-box-shadow: -2px 9px 28px -1px rgba(122,118,122,1);
-        box-shadow: -2px 9px 28px -1px rgba(122,118,122,1);
-    }
+  .buttoncontainer {
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
 
-    .kontakt-form h1 {
-        margin-top: 10px;
-    }
+  .button {
+    padding: 10px 40%;
+    background-color: #FAAF40;
+    border-radius: 20px;
+    font-size: 20px;
+  }
 
-    .tekstb input {
+  .kontakttekst {
+    grid-column: 6 / 9;
+    grid-row: 2/3;
+    top: 30%;
+    margin-right: 20px;
+  }
 
-        width: 80%;
-        border: none;
-        border-bottom: 1px solid #9c9c9c;
-        margin-top: 30px;
-        padding-bottom: 5px;
-        font-size: 15px;
+  .kontakttekst p {
+    color: white;
+    font-size: 20px;
+    padding-top: 10px;
+  }
 
-    }
+  .kontakttekst h1 {
+    color: white;
+    font-weight: bold;
+  }
 
-    .tekstb textarea {
-        width: 80%;
-        border: none;
-        border-bottom: 1px solid #9c9c9c;
-        margin-top: 30px;
-        font-size: 15px;
+  /*-----social medie iconer-----*/
+  .kontakt-form img {
+    top: 15px;
+  }
 
-    }
-    .buttoncontainer {
-        margin-top: 40px;
-        margin-bottom: 30px;
-    }
-
-    .button {
-        padding: 10px 40%;
-        background-color: #FAAF40;
-        border-radius: 20px;
-        font-size: 20px;
-
-    }
-
-    .kontakttekst {
-        grid-column: 6 / 9;
-        grid-row: 2/3;
-        top:  30%;
-        margin-right: 20px;
-    }
-    .kontakttekst p {
-        color: white;
-        font-size: 20px;
-        padding-top: 10px;
-
-    }
-
-    .kontakttekst h1 {
-        color: white;
-        font-weight: bold;
-    }
-
-/*-----social medie iconer-----*/
-    .kontakt-form img{
-        top: 15px;
-
-    }
-
-    /* kontakt side styles slut*/
-
-    
-    /*------ om side styles start ------*/
-    
-    .ombaggrund {
-            margin-top: 0;
+  /* kontakt side styles slut*/
+  /*------ om side styles start ------*/
+  .ombaggrund {
+    margin-top: 0;
     grid-column: 1/ 9;
-    grid-row: 1 /  3;
+    grid-row: 1 / 3;
     width: 100%;
     background-image: url(baggrundenom.png);
     background-repeat: no-repeat;
     background-size: 730px 800px;
-    background-position:right top;
+    background-position: right top;
     height: 900px;
-        
-    }
-    
-    .tobias {
-        grid-column: 1/ span 3;
-        display: block;
-        width: 100%;
-        left: 110px;
-        bottom: 820px;
-        
-        
-    }
-    
-    .tobias img {
-        width: 180px;
-        border-radius: 10px;
-        box-shadow: 0 10px 20px black;
-    }
-    
-    .malene {
-        grid-column: 1/ span 3;
-        display: block;
-        width: 100%;
-        left: 110px;
-        bottom: 800px;
-        
-        
-    }
-    
-    .malene img {
-        width: 180px;
-        border-radius: 10px;
-        box-shadow: 0 10px 20px black;
-    }
-    
-    .casper {
-        grid-column: 1/ span 3;
-        display: block;
-        width: 100%;
-        left: 110px;
-        bottom: 780px;
-        
-        
-    }
-    
-    .casper img {
-        width: 180px;
-        border-radius: 10px;
-        box-shadow: 0 10px 20px black;
-    }
-    /*------ om side styles slut ------*/
-    
-     /*------ om siden tekst start ------*/
-    
-    .omtekst {
-        grid-column: 5/9;
-        grid-row: 2/4;
-        margin-top: 70px;
-        margin-right: 5px;
-        bottom: 5%;
-        text-align: justify;
-        right: 10px;
-        padding-right: 20px;
-        
-    }
-    
-    .omtekst p, .omtekst h1 {
-        color: white;
-    }
-    .omtekst h1{
-        font-weight: bold;
-        text-align: center;
-        padding-bottom: 20px;
-    }
-    
-    /*------ om siden tekst slut ------*/
-    
-    
+  }
 
-    /* ----------- program side styles ----------*/
-    .logoheader{
-      grid-column: 1 / 9;
-    }
+  .tobias {
+    grid-column: 1/ span 3;
+    display: block;
+    width: 100%;
+    left: 110px;
+    bottom: 820px;
+  }
 
-    .programcontainer {
-      grid-column: 1 / 9;
-      background-color: #f5f5f5;
-      width: 90%;
+  .tobias img {
+    width: 180px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px black;
+  }
 
-      margin: 30px auto;
-      border-radius: 25px;
-      display: flex;
-      justify-content: space-evenly;
-      flex-wrap: wrap;
+  .malene {
+    grid-column: 1/ span 3;
+    display: block;
+    width: 100%;
+    left: 110px;
+    bottom: 800px;
+  }
 
-    }
-    .program {
-      width: 40%;
-      height: 450px;
-      margin: 30px 0;
+  .malene img {
+    width: 180px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px black;
+  }
 
+  .casper {
+    grid-column: 1/ span 3;
+    display: block;
+    width: 100%;
+    left: 110px;
+    bottom: 780px;
+  }
 
-    }
-    /* ----------- basic side styles ----------*/
+  .casper img {
+    width: 180px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px black;
+  }
 
+  /*------ om side styles slut ------*/
+  /*------ om siden tekst start ------*/
+  .omtekst {
+    grid-column: 5/9;
+    grid-row: 2/4;
+    margin-top: 70px;
+    margin-right: 5px;
+    bottom: 5%;
+    text-align: justify;
+    right: 10px;
+    padding-right: 20px;
+  }
 
+  .omtekst p, .omtekst h1 {
+    color: white;
+  }
+
+  .omtekst h1 {
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  /*------ om siden tekst slut ------*/
+  /* ----------- program side styles ----------*/
+  .logoheader {
+    grid-column: 1 / 9;
+  }
+
+  .programcontainer {
+    grid-column: 1 / 9;
+    background-color: #f5f5f5;
+    width: 90%;
+    margin: 30px auto;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .program {
+    width: 40%;
+    height: 450px;
+    margin: 30px 0;
+  }
+
+  /* ----------- basic side styles ----------*/
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -859,42 +813,39 @@ footer div {
 
   .imagecontainer {
     background-image: url(images/webdesignerbig.png);
-    background-size: 810px auto ;
+    background-size: 810px auto;
     grid-column: 2 / 9;
     height: 670px;
-
-
   }
 
   main {
-
-      grid-column: 1 / 5;
-      grid-row: 1 /3;
-      top: 200px;
-
+    grid-column: 1 / 5;
+    grid-row: 1 /3;
+    top: 200px;
   }
+
   h1, h2 {
     font-size: 40px;
   }
 
- p {
+  p {
     font-size: 18px;
-
   }
 
-  .imagecontainer2{
+  .imagecontainer2 {
     background-image: url(images/mobilbig.png);
     height: 610px;
     background-size: 600px auto;
-}
+  }
+
   .submain {
     top: 70px;
   }
+
   .programcontainer {
     grid-column: 1 / 9;
     background-color: #f5f5f5;
     width: 90%;
-
     margin: 30px auto;
     border-radius: 25px;
     display: flex;
@@ -906,60 +857,44 @@ footer div {
     width: 40%;
     height: 450px;
     margin: 30px 10px;
+  }
 
-    }
-    /*------ kontakt side styles------*/
-      .piccontainer{
-         margin-top: 0;
+  /*------ kontakt side styles------*/
+  .piccontainer {
+    margin-top: 0;
     grid-column: 1/ 9;
     grid-row: 1 / span 4;
     width: 100%;
     background-image: url(boelgens.png);
     background-repeat: no-repeat;
     background-size: 1250px auto;
-    background-position:right top;
+    background-position: right top;
     height: 900px;
+  }
 
-    }
-    /*------ kontakt side styles slut------*/
-
-    /*------ om side styles start ------*/
-    
-    .ombaggrund {
-            margin-top: 0;
+  /*------ om side styles start ------*/
+  .ombaggrund {
+    margin-top: 0;
     grid-column: 1/ 9;
-    grid-row: 1 /  3;
+    grid-row: 1 / 3;
     width: 100%;
     background-image: url(baggrundenom.png);
     background-repeat: no-repeat;
     background-size: 1000px auto;
-    background-position:right top;
+    background-position: right top;
     height: 900px;
-   
-    }
-    
-    
-       /*------ om siden tekst start ------*/
-    
-    .omtekst {
-        grid-column: 5/9;
-        grid-row: 2/4;
-        margin-top: 70px;
-        margin-right: 5px;
-        bottom: 5%;
-        text-align: justify;
-        right: 50px;
-        padding-right: 20px;
-        
-    }
-    
-    /*------ om siden tekst slut ------*/
-   
-    
-    
-    /*------ om side styles slut ------*/
-    
-    
+  }
+
+  .omtekst {
+    grid-column: 5/9;
+    grid-row: 2/4;
+    margin-top: 70px;
+    margin-right: 5px;
+    bottom: 5%;
+    text-align: justify;
+    right: 50px;
+    padding-right: 20px;
+  }
 
   /* ----------- basic side styles ----------*/
   .sitecontainer {
@@ -974,6 +909,7 @@ footer div {
     background: #f5f5f5;
     border-radius: 25px;
   }
+
   .sitecount {
     width: 15%;
     height: 900px;
@@ -982,50 +918,50 @@ footer div {
     margin-top: 20px;
     border-radius: 25px;
   }
-  .iframecontainer{
+
+  .iframecontainer {
     width: 100%;
     overflow: hidden;
     padding-top: 453px;
   }
+
   .intro p {
     width: 90%;
     margin: 0 auto;
   }
+
   .sitecount ul {
     text-align: center;
     list-style-type: none;
     margin-top: 20px;
   }
-  .sitecount .thick{
+
+  .sitecount .thick {
     font-weight: bold;
     padding-bottom: 20px;
     font-size: 20px;
-
   }
+
   .sitecount li {
     color: black;
     border-bottom: 1px solid #a6a6a6;
     padding: 10px 0;
   }
+
   .sitecount li a {
     color: black;
   }
+
   .sitecount li a:hover {
-    color:#FCB040;
+    color: #FCB040;
   }
-
 }
-
-
-
-
-
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-body{
-  height: 100vh;
-}
+  body {
+    height: 100vh;
+  }
 
   .menu a {
     font-size: 20px;
@@ -1033,19 +969,17 @@ body{
 
   .imagecontainer {
     background-image: url(images/webdesignerbig.png);
-    background-size: 950px auto ;
+    background-size: 950px auto;
     grid-column: 2 / 9;
     height: 760px;
-
   }
 
   main {
-
-      grid-column: 1 / 5;
-      grid-row: 1 /3;
-      top: 220px;
-
+    grid-column: 1 / 5;
+    grid-row: 1 /3;
+    top: 220px;
   }
+
   main h1 {
     font-size: 40px;
   }
@@ -1054,172 +988,149 @@ body{
     font-size: 18px;
   }
 
-  .imagecontainer2{
+  .imagecontainer2 {
     background-image: url(images/mobilbig.png);
     background-size: 750px auto;
     height: 770px;
+  }
 
-}
-.submain {
-  top: 100px;
-}
-.programcontainer {
-  grid-column: 1 / 9;
-  background-color: #f5f5f5;
-  width: 90%;
+  .submain {
+    top: 100px;
+  }
 
-  margin: 30px auto 600px;
-  border-radius: 25px;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
+  .programcontainer {
+    grid-column: 1 / 9;
+    background-color: #f5f5f5;
+    width: 90%;
+    margin: 30px auto 170px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
 
-.program {
-  width: 50%;
-  height: 450px;
+  .program {
+    width: 50%;
+    height: 450px;
+  }
 
-}
-
-    /*------ kontakt side styles------*/
-
-     .piccontainer{
-         margin-top: 0;
+  /*------ kontakt side styles------*/
+  .piccontainer {
+    margin-top: 0;
     grid-column: 1/ 9;
     grid-row: 1 / span 4;
     width: 100%;
     background-image: url(boelgens.png);
     background-repeat: no-repeat;
     background-size: 1400px auto;
-    background-position:right top;
+    background-position: right top;
     height: 900px;
+  }
 
-    }
+  .kontakt-form {
+    z-index: 99;
+    background-color: white;
+    grid-column: 2 / 8;
+    grid-row: 2/ 3;
+    top: 30%;
+    margin: 0 auto;
+    right: 210px;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+    width: 60%;
+    text-align: center;
+    -webkit-box-shadow: -2px 9px 28px -1px rgba(122, 118, 122, 1);
+    -moz-box-shadow: -2px 9px 28px -1px rgba(122, 118, 122, 1);
+    box-shadow: -2px 9px 28px -1px rgba(122, 118, 122, 1);
+  }
 
-      .kontakt-form {
-        z-index: 99;
-        background-color: white;
-        grid-column: 2 /  8;
-        grid-row: 2/ 3;
-        top: 30%;
-        margin: 0 auto;
-        right: 210px;
-        box-shadow: 0 0 10px black;
-        border-radius: 10px;
-        width: 60%;
-        text-align: center;
-        -webkit-box-shadow: -2px 9px 28px -1px rgba(122,118,122,1);
-        -moz-box-shadow: -2px 9px 28px -1px rgba(122,118,122,1);
-        box-shadow: -2px 9px 28px -1px rgba(122,118,122,1);
-    }
+  .kontakttekst {
+    margin-right: 50px;
+  }
 
-    .kontakttekst {
-        margin-right: 50px;
+  .kontakttekst p {
+    font-size: 25px;
+  }
 
-    }
-
-    .kontakttekst p {
-        font-size: 25px;
-    }
-
-
-    /*------ kontakt side styles slut------*/
-
-    
-     /*------ om side styles start ------*/
-    
-    .ombaggrund {
-            margin-top: 0;
+  /*------ om side styles start ------*/
+  .ombaggrund {
+    margin-top: 0;
     grid-column: 1/ 9;
-    grid-row: 1 /  span 4;
+    grid-row: 1 / span 4;
     width: 100%;
     background-image: url(baggrundenom.png);
     background-repeat: no-repeat;
     background-size: 1100px auto;
-    background-position:right top;
+    background-position: right top;
     height: 900px;
-   
-    }
-    
-       /*------ om siden tekst start ------*/
-    
-    .omtekst {
-        grid-column: 5/9;
-        grid-row: 2/4;
-        margin-top: 70px;
-        bottom: 5%;
-        text-align: justify;
-        right: 50px;
-        margin-left: 40px;
-        
-        
-    }
-    .omtekst p{
-        font-size: 20px;
-    }
-    
-    .omtekst h1 {
-        font-size: 55px;
-    }
-    
-    /*------ om siden tekst slut ------*/
-    
-    /*------ om side styles slut ------*/
-    
+  }
 
+  /*------ om siden tekst start ------*/
+  .omtekst {
+    grid-column: 5/9;
+    grid-row: 2/4;
+    margin-top: 70px;
+    bottom: 5%;
+    text-align: justify;
+    right: 50px;
+    margin-left: 40px;
+  }
 
+  .omtekst p {
+    font-size: 20px;
+  }
 
+  .omtekst h1 {
+    font-size: 55px;
+  }
 }
 
 @media only screen and (min-width: 1400px) {
   .homepage {
-  background-color: #f5f5f5;
-
+    background-color: #f5f5f5;
   }
+
   .container {
     background-color: white;
-     max-width: 1680px;
+    max-width: 1680px;
     margin: 0 auto;
-    -webkit-box-shadow: 0px 10px 19px -1px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 10px 19px -1px rgba(0,0,0,0.75);
-  box-shadow: 0px 10px 19px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 10px 19px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 10px 19px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 10px 19px -1px rgba(0, 0, 0, 0.75);
   }
+
   .imagecontainer {
-    background-size: 1050px auto ;
+    background-size: 1050px auto;
     height: 840px;
-
   }
 
-/*------ kontakt side styles------*/
-      .piccontainer{
-         margin-top: 0;
+  /*------ kontakt side styles------*/
+  .piccontainer {
+    margin-top: 0;
     grid-column: 1/ 9;
     grid-row: 1 / span 4;
     width: 100%;
     background-image: url(boelgens.png);
     background-repeat: no-repeat;
     background-size: 1400px auto;
-    background-position:right top;
+    background-position: right top;
     height: 900px;
+  }
 
-    }
-
-     .kontakt-form {
-        z-index: 99;
-        background-color: white;
-        grid-column: 2 /  8;
-        grid-row: 2/ 3;
-        top: 30%;
-        margin: 0 auto;
-        right: 210px;
-        box-shadow: 0 0 10px black;
-        border-radius: 10px;
-        width: 60%;
-        text-align: center;
-        -webkit-box-shadow: -2px 9px 28px -1px rgba(122,118,122,1);
-        -moz-box-shadow: -2px 9px 28px -1px rgba(122,118,122,1);
-        box-shadow: -2px 9px 28px -1px rgba(122,118,122,1);
-    }
-
-/*------ kontakt side styles slut------*/
+  .kontakt-form {
+    z-index: 99;
+    background-color: white;
+    grid-column: 2 / 8;
+    grid-row: 2/ 3;
+    top: 30%;
+    margin: 0 auto;
+    right: 210px;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+    width: 60%;
+    text-align: center;
+    -webkit-box-shadow: -2px 9px 28px -1px rgba(122, 118, 122, 1);
+    -moz-box-shadow: -2px 9px 28px -1px rgba(122, 118, 122, 1);
+    box-shadow: -2px 9px 28px -1px rgba(122, 118, 122, 1);
+  }
 }

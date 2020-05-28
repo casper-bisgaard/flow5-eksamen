@@ -88,6 +88,10 @@ function validatelogin() {
 
 }
 
+function commingsoon() {
+  alert("Dette kursus er desværre ikke klar endnu, men bare rolig vi arbejder på højtryk for at få det færdigt")
+}
+
 
 function validatequestions() {
 
@@ -104,6 +108,23 @@ if (answer2 == "</body>" ) {
 }else {
    document.getElementById('answer2p').innerHTML = "Spørgsmål 2: er forkert";
 }
+
+}
+function validatequestions2() {
+  var answer3 = document.getElementById('answer3').value;
+  var answer4 = document.getElementById('answer4').value;
+
+
+  if (answer3 == "css") {
+   document.getElementById('answer3p').innerHTML = "Spørgsmål 1: er rigtigt";
+  } else {
+    document.getElementById('answer3p').innerHTML = "Spørgsmål 1: er forkert";
+  }
+  if (answer4 == "background-color: green;" || answer4 == "background: green;") {
+     document.getElementById('answer4p').innerHTML = "Spørgsmål 2: er rigtigt";
+  }else {
+     document.getElementById('answer4p').innerHTML = "Spørgsmål 2: er forkert";
+  }
 
 
 }
