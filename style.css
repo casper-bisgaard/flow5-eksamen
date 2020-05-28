@@ -261,7 +261,7 @@ h2 {
         -webkit-box-shadow: -2px 9px 28px -1px rgba(122,118,122,1);
         -moz-box-shadow: -2px 9px 28px -1px rgba(122,118,122,1);
         box-shadow: -2px 9px 28px -1px rgba(122,118,122,1);
-       
+
     }
 
     .tekstb input {
@@ -300,7 +300,7 @@ h2 {
       font-size: 20px;
 
     }
-    
+
     .kontakttekst h1{
         font-size: 25px;
         padding-bottom: 15px;
@@ -310,9 +310,9 @@ h2 {
     }
     /* kontakt side styles slut*/
 
-    
+
     /*------ om siden tekst start ------*/
-    
+
     .omtekst {
         grid-column: 1/ span 4;
         grid-row: 2/3;
@@ -323,59 +323,59 @@ h2 {
         margin-right: 20px;
     }
     /*------ om siden tekst slut ------*/
-    
+
     /*------ Billeder af os style start ------*/
-    
+
      .tobias {
         grid-column: 1/ span 3;
         width: 100%;
         left: 50px;
-        
-        
-        
+
+
+
     }
-    
+
     .tobias img {
         width: 100px;
         border-radius: 10px;
         box-shadow: 0 10px 20px black;
     }
-    
+
     .malene {
         grid-column: 1/ span 3;
         width: 100%;
         left: 200px;
         bottom: 117px;
-       
-        
-        
+
+
+
     }
-    
+
     .malene img {
         width: 100px;
         border-radius: 10px;
         box-shadow: 0 10px 20px black;
     }
-    
+
     .casper {
         grid-column: 1/ span 3;
         width: 100%;
         left: 350px;
         bottom: 234px;
-        
-        
+
+
     }
-    
+
     .casper img {
         width: 100px;
         border-radius: 10px;
         box-shadow: 0 10px 20px black;
     }
-    
+
     /*------ Billeder af os style slut ------*/
 
 
-  
+
 
 
 /* ----------- sign up side styles ----------*/
@@ -531,10 +531,12 @@ h2 {
 
      .site {
        margin-top: 20px;
+       margin-bottom: 35px;
        width: 90%;
        height: 900px;
        background: #f5f5f5;
        border-radius: 25px;
+
      }
      .sitecount {
        display: none;
@@ -791,9 +793,9 @@ footer div {
 
     /* kontakt side styles slut*/
 
-    
+
     /*------ om side styles start ------*/
-    
+
     .ombaggrund {
             margin-top: 0;
     grid-column: 1/ 9;
@@ -804,57 +806,57 @@ footer div {
     background-size: 730px 800px;
     background-position:right top;
     height: 900px;
-        
+
     }
-    
+
     .tobias {
         grid-column: 1/ span 3;
         width: 100%;
         left: 110px;
         bottom: 820px;
-        
-        
+
+
     }
-    
+
     .tobias img {
         width: 180px;
         border-radius: 10px;
         box-shadow: 0 10px 20px black;
     }
-    
+
     .malene {
         grid-column: 1/ span 3;
         width: 100%;
         left: 110px;
         bottom: 800px;
-        
-        
+
+
     }
-    
+
     .malene img {
         width: 180px;
         border-radius: 10px;
         box-shadow: 0 10px 20px black;
     }
-    
+
     .casper {
         grid-column: 1/ span 3;
         width: 100%;
         left: 110px;
         bottom: 780px;
-        
-        
+
+
     }
-    
+
     .casper img {
         width: 180px;
         border-radius: 10px;
         box-shadow: 0 10px 20px black;
     }
     /*------ om side styles slut ------*/
-    
+
      /*------ om siden tekst start ------*/
-    
+
     .omtekst {
         grid-column: 5/9;
         grid-row: 2/4;
@@ -864,9 +866,9 @@ footer div {
         text-align: justify;
         right: 10px;
         padding-right: 20px;
-        
+
     }
-    
+
     .omtekst p, .omtekst h1 {
         color: white;
     }
@@ -875,10 +877,10 @@ footer div {
         text-align: center;
         padding-bottom: 20px;
     }
-    
+
     /*------ om siden tekst slut ------*/
-    
-    
+
+
 
     /* ----------- program side styles ----------*/
     .logoheader{
@@ -979,14 +981,14 @@ footer div {
     height: 900px;
 
     }
-    
+
     .kontakttekst h1 {
         font-size: 40px;
     }
     /*------ kontakt side styles slut------*/
 
     /*------ om side styles start ------*/
-    
+
     .ombaggrund {
             margin-top: 0;
     grid-column: 1/ 9;
@@ -997,12 +999,12 @@ footer div {
     background-size: 1000px auto;
     background-position:right top;
     height: 900px;
-   
+
     }
-    
-    
+
+
        /*------ om siden tekst start ------*/
-    
+
     .omtekst {
         grid-column: 5/9;
         grid-row: 2/4;
@@ -1012,16 +1014,16 @@ footer div {
         text-align: justify;
         right: 50px;
         padding-right: 20px;
-        
+
     }
-    
+
     /*------ om siden tekst slut ------*/
-   
-    
-    
+
+
+
     /*------ om side styles slut ------*/
-    
-    
+
+
 
   /* ----------- basic side styles ----------*/
   .sitecontainer {
@@ -1130,7 +1132,7 @@ body{
   background-color: #f5f5f5;
   width: 90%;
 
-  margin: 30px auto 600px;
+  margin: 30px auto 150px;
   border-radius: 25px;
   display: flex;
   justify-content: space-evenly;
@@ -1187,9 +1189,9 @@ body{
 
     /*------ kontakt side styles slut------*/
 
-    
+
      /*------ om side styles start ------*/
-    
+
     .ombaggrund {
             margin-top: 0;
     grid-column: 1/ 9;
@@ -1200,11 +1202,11 @@ body{
     background-size: 1100px auto;
     background-position:right top;
     height: 900px;
-   
+
     }
-    
+
        /*------ om siden tekst start ------*/
-    
+
     .omtekst {
         grid-column: 5/9;
         grid-row: 2/4;
@@ -1213,21 +1215,21 @@ body{
         text-align: justify;
         right: 50px;
         margin-left: 40px;
-        
-        
+
+
     }
     .omtekst p{
         font-size: 20px;
     }
-    
+
     .omtekst h1 {
         font-size: 55px;
     }
-    
+
     /*------ om siden tekst slut ------*/
-    
+
     /*------ om side styles slut ------*/
-    
+
 
 
 
@@ -1266,6 +1268,7 @@ body{
 
     }
 
+
      .kontakt-form {
         z-index: 99;
         background-color: white;
@@ -1281,6 +1284,9 @@ body{
         -webkit-box-shadow: -2px 9px 28px -1px rgba(122,118,122,1);
         -moz-box-shadow: -2px 9px 28px -1px rgba(122,118,122,1);
         box-shadow: -2px 9px 28px -1px rgba(122,118,122,1);
+    }
+    .kontakttekst{
+      margin-left: 40px;
     }
 
 /*------ kontakt side styles slut------*/
