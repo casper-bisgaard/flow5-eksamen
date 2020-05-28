@@ -369,14 +369,15 @@ h2 {
       }
 
     /* ----------- program side styles ----------*/
-      .logoheader{
+      .programmenu{
         grid-column: 1 / 5;
-        text-align: center;
-      }
 
-      .logoheader img {
-        height: 50px;
-        top: 20px;
+      }
+      .programmenu .menu a {
+        color: black;
+      }
+      .programmenu .menu .signupbutton {
+        color: white;
       }
 
       .programcontainer {
