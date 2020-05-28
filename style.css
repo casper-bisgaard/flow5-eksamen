@@ -251,11 +251,12 @@ h2 {
     /* ----------- kontakt side styles ----------*/
     .kontakt-form {
         grid-column: 1 / 5;
-        top: 30%;
+        top: 15%;
         margin: 0 auto;
         box-shadow: 0 0 10px black;
         border-radius: 10px;
         width: 60%;
+        margin-bottom: 150px;
         text-align: center;
         -webkit-box-shadow: -2px 9px 28px -1px rgba(122,118,122,1);
         -moz-box-shadow: -2px 9px 28px -1px rgba(122,118,122,1);
@@ -298,6 +299,13 @@ h2 {
       top: 50px;
       font-size: 20px;
 
+    }
+    
+    .kontakttekst h1{
+        font-size: 25px;
+    }
+    .kontakttekst p{
+        font-size: 15px;
     }
     /* kontakt side styles slut*/
 
