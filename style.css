@@ -303,9 +303,10 @@ h2 {
     
     .kontakttekst h1{
         font-size: 25px;
+        padding-bottom: 15px;
     }
     .kontakttekst p{
-        font-size: 15px;
+        font-size: 17px;
     }
     /* kontakt side styles slut*/
 
