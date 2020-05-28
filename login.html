@@ -11,11 +11,8 @@
       <div class="signup">
           <form >
               <div class="">
-                <h1>Opret dig her</h1>
+                <h1>Log ind</h1>
 
-
-              <input type="text" placeholder="Navn" id="nameid" name="name" > <br>
-              <p class="errorstyle" id="errormessage_name"></p>
 
               <input type="text" placeholder="Email" id="emailid"  name="email" > <br>
               <p class="errorstyle" id="errormessage_email"></p>
@@ -23,14 +20,9 @@
               <input type="password" placeholder="Kodeord" id="password" name="psw" > <br>
               <p class="errorstyle" id="errormessage_code"></p>
 
+              <p class="conditions">Glemt dit kodeord? <br> tryk<a href="#"> her</a>.</p>
 
-              <input type="password" placeholder="Gentag kodeord" id="reppassword" name="psw-repeat">
-              <p class="errorstyle" id="errormessage_repcode"></p>
-
-
-              <p class="conditions">Ved at Oprette dig accepterer du vores<a href="#"> betingelser</a>.</p>
-
-              <button type="button" id="signUp" onclick="validate()">Sign up</button>
+              <button type="button" id="signUp" onclick="validatelogin()">Log ind</button>
 
 
               </div>
