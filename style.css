@@ -304,15 +304,65 @@ h2 {
     /*------ om siden tekst start ------*/
     
     .omtekst {
-        grid-column: 2/4;
+        grid-column: 1/ span 4;
         grid-row: 2/3;
         text-align: center;
         margin-top: 40px;
         margin-bottom: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
     /*------ om siden tekst slut ------*/
     
+    /*------ Billeder af os style start ------*/
     
+     .tobias {
+        grid-column: 1/ span 3;
+        width: 100%;
+        left: 50px;
+        
+        
+        
+    }
+    
+    .tobias img {
+        width: 100px;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px black;
+    }
+    
+    .malene {
+        grid-column: 1/ span 3;
+        width: 100%;
+        left: 200px;
+        bottom: 117px;
+       
+        
+        
+    }
+    
+    .malene img {
+        width: 100px;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px black;
+    }
+    
+    .casper {
+        grid-column: 1/ span 3;
+        width: 100%;
+        left: 350px;
+        bottom: 234px;
+        
+        
+    }
+    
+    .casper img {
+        width: 100px;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px black;
+    }
+    
+    /*------ Billeder af os style slut ------*/
 
 
   
@@ -748,7 +798,6 @@ footer div {
     
     .tobias {
         grid-column: 1/ span 3;
-        display: block;
         width: 100%;
         left: 110px;
         bottom: 820px;
@@ -764,7 +813,6 @@ footer div {
     
     .malene {
         grid-column: 1/ span 3;
-        display: block;
         width: 100%;
         left: 110px;
         bottom: 800px;
@@ -780,7 +828,6 @@ footer div {
     
     .casper {
         grid-column: 1/ span 3;
-        display: block;
         width: 100%;
         left: 110px;
         bottom: 780px;
