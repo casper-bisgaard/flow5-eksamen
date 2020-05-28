@@ -422,6 +422,7 @@ h2 {
   /* ----------- basic side styles ----------*/
   header {
     padding-top: 20px;
+
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -504,6 +505,7 @@ h2 {
   .next {
     margin-top: 20px;
   }
+
 
   .intro .normalbutton {
     top: 50px;
@@ -712,6 +714,7 @@ h2 {
     background-size: 730px 800px;
     background-position: right top;
     height: 900px;
+
   }
 
   .tobias {
@@ -749,6 +752,7 @@ h2 {
     left: 110px;
     bottom: 780px;
   }
+
 
   .casper img {
     width: 180px;
