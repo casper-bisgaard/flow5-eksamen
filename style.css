@@ -313,66 +313,27 @@ h2 {
 
     /*------ om siden tekst start ------*/
 
-    .omtekst {
-        grid-column: 1/ span 4;
+    .ombaggrund {
+        grid-column: 1/  5;
         grid-row: 2/3;
         text-align: center;
-        margin-top: 40px;
-        margin-bottom: 40px;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    /*------ om siden tekst slut ------*/
+      }
 
-    /*------ Billeder af os style start ------*/
-
-     .tobias {
-        grid-column: 1/ span 3;
-        width: 100%;
-        left: 50px;
-
-
-
-    }
-
-    .tobias img {
-        width: 100px;
-        border-radius: 10px;
-        box-shadow: 0 10px 20px black;
-    }
-
-    .malene {
-        grid-column: 1/ span 3;
-        width: 100%;
-        left: 200px;
-        bottom: 117px;
+      .omtekst {
+        width: 80%;
+        margin: 40px auto;
+      }
+      .profileimagecontainer {
+        grid-column: 1/  5;
+        text-align: center;
+      }
+      .profileimagecontainer img {
+        width: 30%;
+        margin: 20px auto;
+        border-radius: 25px;
+      }
 
 
-
-    }
-
-    .malene img {
-        width: 100px;
-        border-radius: 10px;
-        box-shadow: 0 10px 20px black;
-    }
-
-    .casper {
-        grid-column: 1/ span 3;
-        width: 100%;
-        left: 350px;
-        bottom: 234px;
-
-
-    }
-
-    .casper img {
-        width: 100px;
-        border-radius: 10px;
-        box-shadow: 0 10px 20px black;
-    }
-
-    /*------ Billeder af os style slut ------*/
 
 
 
@@ -797,76 +758,25 @@ footer div {
     /*------ om side styles start ------*/
 
     .ombaggrund {
-            margin-top: 0;
-    grid-column: 1/ 9;
+
+    grid-column: 3/ 9;
     grid-row: 1 /  3;
     width: 100%;
     background-image: url(baggrundenom.png);
     background-repeat: no-repeat;
-    background-size: 730px 800px;
+    background-size: 700px 900px;
     background-position:right top;
     height: 900px;
-
     }
 
-    .tobias {
-        grid-column: 1/ span 3;
-        width: 100%;
-        left: 110px;
-        bottom: 820px;
-
-
-    }
-
-    .tobias img {
-        width: 180px;
-        border-radius: 10px;
-        box-shadow: 0 10px 20px black;
-    }
-
-    .malene {
-        grid-column: 1/ span 3;
-        width: 100%;
-        left: 110px;
-        bottom: 800px;
-
-
-    }
-
-    .malene img {
-        width: 180px;
-        border-radius: 10px;
-        box-shadow: 0 10px 20px black;
-    }
-
-    .casper {
-        grid-column: 1/ span 3;
-        width: 100%;
-        left: 110px;
-        bottom: 780px;
-
-
-    }
-
-    .casper img {
-        width: 180px;
-        border-radius: 10px;
-        box-shadow: 0 10px 20px black;
-    }
     /*------ om side styles slut ------*/
 
      /*------ om siden tekst start ------*/
 
     .omtekst {
-        grid-column: 5/9;
-        grid-row: 2/4;
-        margin-top: 70px;
-        margin-right: 5px;
-        bottom: 5%;
-        text-align: justify;
-        right: 10px;
-        padding-right: 20px;
-
+      width: 50%;
+      margin-top: 80px;
+      margin-left: 40%;
     }
 
     .omtekst p, .omtekst h1 {
@@ -877,6 +787,17 @@ footer div {
         text-align: center;
         padding-bottom: 20px;
     }
+    .profileimagecontainer {
+      grid-column: 1/ 4;
+      grid-row: 1 /  3;
+      top: 90px;
+    }
+    .profileimagecontainer img {
+      width: 200px;
+      margin: 10px auto;
+    }
+
+
 
     /*------ om siden tekst slut ------*/
 
@@ -991,12 +912,12 @@ footer div {
 
     .ombaggrund {
             margin-top: 0;
-    grid-column: 1/ 9;
+    grid-column: 3/ 9;
     grid-row: 1 /  3;
     width: 100%;
     background-image: url(baggrundenom.png);
     background-repeat: no-repeat;
-    background-size: 1000px auto;
+    background-size: 900px 1300px;
     background-position:right top;
     height: 900px;
 
@@ -1006,16 +927,16 @@ footer div {
        /*------ om siden tekst start ------*/
 
     .omtekst {
-        grid-column: 5/9;
-        grid-row: 2/4;
-        margin-top: 70px;
-        margin-right: 5px;
-        bottom: 5%;
+        margin-top: 100px;
         text-align: justify;
         right: 50px;
         padding-right: 20px;
-
     }
+
+    .profileimagecontainer img {
+      display: block;
+    }
+
 
     /*------ om siden tekst slut ------*/
 
@@ -1193,9 +1114,9 @@ body{
      /*------ om side styles start ------*/
 
     .ombaggrund {
-            margin-top: 0;
-    grid-column: 1/ 9;
-    grid-row: 1 /  span 4;
+
+    grid-column: 3/ 9;
+    grid-row: 1 /   3;
     width: 100%;
     background-image: url(baggrundenom.png);
     background-repeat: no-repeat;
@@ -1208,31 +1129,7 @@ body{
        /*------ om siden tekst start ------*/
 
     .omtekst {
-        grid-column: 5/9;
-        grid-row: 2/4;
-        margin-top: 70px;
-        bottom: 5%;
-        text-align: justify;
-        right: 50px;
-        margin-left: 40px;
-
-
-    }
-    .omtekst p{
-        font-size: 20px;
-    }
-
-    .omtekst h1 {
-        font-size: 55px;
-    }
-
-    /*------ om siden tekst slut ------*/
-
-    /*------ om side styles slut ------*/
-
-
-
-
+    text-align: justify;
 }
 
 @media only screen and (min-width: 1400px) {
@@ -1289,5 +1186,24 @@ body{
       margin-left: 40px;
     }
 
-/*------ kontakt side styles slut------*/
+/*------ om os ------*/
+    .ombaggrund {
+
+      grid-column: 3/ 9;
+      grid-row: 1 /   3;
+      width: 100%;
+      background-image: url(baggrundenom.png);
+      background-repeat: no-repeat;
+      background-size: 1300px auto;
+      background-position:right top;
+      height: 900px;
+
+    }
+    .omtekst p {
+      font-size: 20px;
+    }
+    .profileimagecontainer img {
+      width: 230px;
+    }
+
 }
